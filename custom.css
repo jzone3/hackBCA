@@ -21,6 +21,14 @@ body {
 	font-weight: 200%;
 }
 
+.explanation {
+	font-size: 30px;
+}
+
+.mono {
+	font-family: monospace;
+}
+
 .info-pane {
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -30,6 +38,14 @@ body {
 	/*text-transform: uppercase;*/
 	text-align: center;
 	font-size: 37px;
+}
+
+.info-pane h4 {
+	text-transform: uppercase;
+}
+
+.info-pane h1 {
+	text-transform: capitalize;
 }
 
 .info-pane button {
@@ -76,6 +92,7 @@ body {
 	text-align: center;
 	font-size: 30px;
 }
+
 .answers{
 	font-size: 24px;
 }
@@ -89,3 +106,20 @@ body {
 	float:right;
 	width: 45%;
 }
+
+.final-register-btn-pane {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+.final-register-btn-pane button {
+	font-size: 50px;
+	text-transform: uppercase;
+	border: none;
+}
+
+/*.second-register-btn {
+	background-color: #2c3e50;
+}*/
