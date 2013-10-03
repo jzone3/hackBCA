@@ -14,7 +14,7 @@ body {
 
 .hackBCA-header h1 {
 	font-family: ProximaNova, monospace;
-	font-size: 102px;
+	font-size: 87px;
 }
 
 .hackBCA-header h1 strong {
@@ -23,11 +23,25 @@ body {
 
 .info-pane {
 	padding-top: 30px;
+	padding-bottom: 50px;
 	width: 100%;
 	background-color: #2c3e50;
 	color: #ecf0f1;
-	text-transform: uppercase;
-	height: 500px;
+	/*text-transform: uppercase;*/
 	text-align: center;
-	font-size: 42px;
+	font-size: 37px;
+}
+
+.info-pane button {
+	margin-top: 40px;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+.signup-btn {
+	margin-right: 10px;
+}
+
+.sponsor-btn {
+	margin-left: 10px;
 }
