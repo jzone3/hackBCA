@@ -12,9 +12,26 @@ body {
 	text-align: center;
 }
 
+@media screen and (max-width: 285px) {
+	.hackBCA-header h1 {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.hackBCA-header h1 {
+		font-size: 70px;
+	}
+}
+
+@media screen and (min-width: 420px) {
+	.hackBCA-header h1 {
+		font-size: 100px;
+	}
+}
+
 .hackBCA-header h1 {
 	font-family: ProximaNova, monospace;
-	font-size: 87px;
 }
 
 .hackBCA-header h1 strong {
@@ -56,7 +73,7 @@ body {
 }
 
 .signup-btn {
-	margin-right: 10px;
+	/*margin-right: 10px;*/
 	background-color: #2ECC71;
 	color: white;
 }
@@ -66,7 +83,7 @@ body {
 }
 
 .sponsor-btn {
-	margin-left: 10px;
+	/*margin-left: 10px;*/
 	background-color: #9B59b6;
 	color: white;
 }
