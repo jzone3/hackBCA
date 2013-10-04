@@ -60,7 +60,7 @@ body {
 	background-color: #2ECC71;
 }
 
-.signup-btn:hover {
+.signup-btn:hover, .signup-btn:active {
 	background-color: #229E57;
 }
 
@@ -69,7 +69,7 @@ body {
 	background-color: #9B59b6;
 }
 
-.sponsor-btn:hover {
+.sponsor-btn:hover, .sponsor-btn:active {
 	background-color: #77428D;
 }
 
