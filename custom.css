@@ -75,13 +75,21 @@ body {
 	background-color: #77428D;
 }
 
-.sponsors-pane {
+.judges-pane {
 	padding-top: 30px;
 	padding-bottom: 50px;
 	width: 100%;
 	/*text-transform: uppercase;*/
 	text-align: center;
 	font-size: 30px;
+}
+
+.circle-img {
+	margin: auto;
+	border-radius: 150px;
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
 }
 
 .more-info-pane {
@@ -99,15 +107,17 @@ body {
 	font-size: 24px;
 }
 
-/*.left{
-	float: left;
-	width: 45%;
-
+.sponsors-pane {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
 }
-.right{
-	float:right;
-	width: 45%;
-}*/
+
+.normal {
+	font-weight: normal;
+}
 
 .final-register-btn-pane {
 	padding-top: 30px;
@@ -120,12 +130,4 @@ body {
 	font-size: 50px;
 	text-transform: uppercase;
 	border: none;
-}
-
-/*.second-register-btn {
-	background-color: #2c3e50;
-}*/
-
-.normal {
-	font-weight: normal;
 }
