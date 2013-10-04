@@ -58,6 +58,7 @@ body {
 .signup-btn {
 	margin-right: 10px;
 	background-color: #2ECC71;
+	color: white;
 }
 
 .signup-btn:hover, .signup-btn:active {
@@ -67,6 +68,7 @@ body {
 .sponsor-btn {
 	margin-left: 10px;
 	background-color: #9B59b6;
+	color: white;
 }
 
 .sponsor-btn:hover, .sponsor-btn:active {
