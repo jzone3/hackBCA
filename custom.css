@@ -139,6 +139,11 @@ body {
 	font-size: 30px;
 }
 
+.sponsors-pane img:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
 .normal {
 	font-weight: normal;
 }
