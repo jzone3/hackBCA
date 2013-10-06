@@ -229,6 +229,10 @@ body {
 	text-align: left;
 }
 
+.team img {
+	width: 100%;
+}
+
 .active {
 	background-color: #21303E;
 	cursor: default;
