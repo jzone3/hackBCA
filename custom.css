@@ -219,6 +219,16 @@ body {
 	font-size: 27px;
 }
 
+
+.press {
+	text-align: left;
+	font-size: 20px;
+}
+
+.press li {
+	text-align: left;
+}
+
 .active {
 	background-color: #21303E;
 	cursor: default;
