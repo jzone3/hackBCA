@@ -5,6 +5,7 @@
 
 body {
 	font-family: ProximaNova, Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: #ecf0f1;
 }
 
 .hackBCA-header {
@@ -89,7 +90,7 @@ body {
 .signup-btn {
 	/*margin-right: 10px;*/
 	background-color: #2ECC71;
-	color: white;
+	color: #ecf0f1;
 	border: none;
 	text-transform: uppercase;
 }
@@ -101,7 +102,7 @@ body {
 .sponsor-btn {
 	/*margin-left: 10px;*/
 	background-color: #9B59b6;
-	color: white;
+	color: #ecf0f1;
 	border: none;
 	text-transform: uppercase;
 }
