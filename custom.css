@@ -30,6 +30,11 @@ body {
 	}
 }
 
+.hackBCA-header a {
+	text-decoration: none;
+	color: #2c3e50
+}
+
 .hackBCA-header h1 {
 	font-family: ProximaNova, monospace;
 }
@@ -101,6 +106,14 @@ body {
 	/*text-transform: uppercase;*/
 	text-align: center;
 	font-size: 30px;
+}
+
+.api-imgs {
+	max-width: 100%;
+}
+
+.description {
+	font-size: 20px;
 }
 
 .circle-img {
