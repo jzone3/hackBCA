@@ -161,8 +161,7 @@ body {
 
 .sponsors-pane {
 	padding-top: 30px;
-	padding-bottom: 0px;
-	margin-bottom: 0px;
+	padding-bottom: 50px;
 	width: 100%;
 	text-align: center;
 	font-size: 30px;
@@ -241,7 +240,7 @@ body {
 }
 
 .final-register-btn-pane {
-	padding-top: 45px;
+	padding-top: 30px;
 	padding-bottom: 30px;
 	width: 100%;
 	text-align: center;
