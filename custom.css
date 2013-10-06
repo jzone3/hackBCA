@@ -8,6 +8,10 @@ body {
 	background-color: #ecf0f1;
 }
 
+.btn-info, .btn-primary, .btn-success {
+	color: #ecf0f1;
+}
+
 .hackBCA-header {
 	width: 100%;
 	text-align: center;
