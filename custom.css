@@ -51,6 +51,16 @@ body {
 	font-family: monospace;
 }
 
+.page-title {
+	text-transform: uppercase;
+	font-size: 45px;
+	margin-top: 20px;
+}
+
+.api-page-title {
+	text-transform: none;
+}
+
 .info-pane {
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -106,6 +116,10 @@ body {
 	/*text-transform: uppercase;*/
 	text-align: center;
 	font-size: 30px;
+}
+
+.schedule {
+	font-size: 20px;
 }
 
 .api-imgs {
