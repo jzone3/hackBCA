@@ -219,6 +219,11 @@ body {
 	font-size: 27px;
 }
 
+.active {
+	background-color: #21303E;
+	cursor: default;
+}
+
 .final-register-btn-pane {
 	padding-top: 30px;
 	padding-bottom: 30px;
