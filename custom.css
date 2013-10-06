@@ -147,6 +147,10 @@ body {
 	width: 90%;
 }
 
+.sponsors-pane .container {
+	margin-bottom: -30px;
+}
+
 .sponsors-pane img:hover, .sponsors-pane img:active {
 	opacity: 1;
 	filter: alpha(opacity=100);
