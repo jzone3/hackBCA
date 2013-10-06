@@ -147,7 +147,7 @@ body {
 	width: 90%;
 }
 
-.sponsors-pane img:hover {
+.sponsors-pane img:hover, .sponsors-pane img:active {
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-webkit-filter: grayscale(0%);
