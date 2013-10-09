@@ -144,6 +144,22 @@ body {
 	height: 250px;
 }
 
+.team-circle-img-bigger {
+	margin: auto;
+	border-radius: 150px;
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+}
+
+.team-circle-img {
+	margin: auto;
+	border-radius: 150px;
+	overflow: hidden;
+	width: 187.5px;
+	height: 187.5px;
+}
+
 .more-info-pane {
 	padding-top: 30px;
 	padding-bottom: 50px;
@@ -225,7 +241,6 @@ body {
 	font-size: 27px;
 }
 
-
 .press {
 	text-align: left;
 	font-size: 20px;
@@ -235,8 +250,8 @@ body {
 	text-align: left;
 }
 
-.team img {
-	width: 100%;
+.team a {
+	color: #2c3e50;
 }
 
 .active {
