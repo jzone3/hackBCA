@@ -144,6 +144,9 @@ body {
 	overflow: hidden;
 	width: 250px;
 	height: 250px;
+	background-size: cover;
+	background-position:50% 50%;
+    background-repeat:no-repeat; 
 }
 
 .team-circle-img-bigger {
@@ -280,6 +283,19 @@ body {
 
 .final-register-btn-pane button {
 	font-size: 50px;
+	text-transform: uppercase;
+	border: none;
+}
+
+.sponsor-btn-huge {
+	padding-top: 10px;
+	padding-bottom: 60px;
+	width: 100%;
+	text-align: center;
+}
+
+.sponsor-btn-huge button {
+	font-size: 30px;
 	text-transform: uppercase;
 	border: none;
 }
