@@ -139,6 +139,8 @@ body {
 .circle-img {
 	margin: auto;
 	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
 	overflow: hidden;
 	width: 250px;
 	height: 250px;
@@ -147,17 +149,27 @@ body {
 .team-circle-img-bigger {
 	margin: auto;
 	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
 	overflow: hidden;
 	width: 220px;
 	height: 220px;
+	background-size: cover;
+	background-position:50% 50%;
+    background-repeat:no-repeat; 
 }
 
 .team-circle-img {
 	margin: auto;
-	border-radius: 150px;
+	border-radius: 110px;
+	-webkit-border-radius: 110px;
+	-moz-border-radius: 110px;
 	overflow: hidden;
 	width: 187.5px;
 	height: 187.5px;
+	background-size: cover;
+	background-position:50% 50%;
+    background-repeat:no-repeat; 
 }
 
 .more-info-pane {
