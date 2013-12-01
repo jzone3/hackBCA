@@ -30,11 +30,27 @@
 	</head>
 
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 		<!-- Wrap all page content here -->
 		<div id="wrap">
-
 			<div class="hackBCA-header">
 				<h1>hack<strong>BCA</strong></h1>
+				<div class="social-btn">
+					<div class="twitter-btn">
+						<a href="https://twitter.com/hackBCA" class="twitter-follow-button" data-show-count="false">Follow @hackBCA</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+					<div class="facebook-btn">
+						<div class="fb-like" data-href="https://www.facebook.com/BCAhackathon" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+					</div>
+				</div>
 			</div>
 			<div class="info-pane">
 				<div class="container">
@@ -67,10 +83,11 @@
 					<!-- </div> -->
 
 					<div class="row">
-						<div class="col-md-3">&nbsp;</div>
-						<div class="col-md-3"><a href="https://www.eventbrite.com/event/8914905723"><button type="button" class="btn btn-lg signup-btn">Register</button></a></div>
+						<div class="col-md-1">&nbsp;</div>
 						<div class="col-md-3"><a href="sponsors.pdf"><button type="button" class="btn btn-lg sponsor-btn">Sponsor</button></a></div>
-						<div class="col-md-3">&nbsp;</div>
+						<div class="col-md-4"><a href="https://www.eventbrite.com/event/8914905723"><button type="button" class="btn btn-lg signup-btn">Register</button></a></div>
+						<div class="col-md-3"><a href="https://www.eventbrite.com/event/8914905723"><button type="button" class="btn btn-lg sponsor-btn">Mentor</button></a></div>
+						<div class="col-md-1">&nbsp;</div>
 					</div>
 
 					<hr>
@@ -167,14 +184,14 @@
 							<p class="answers">You must submit your hack by 10:00am on Sunday, but can still work on them after 10. We will send an email with more information on Sunday.</p>
 						</div>
 						<div class="col-md-6">
-							<h2>Do I need to code or like computers?</h2>
-							<p class="answers">Nope! In fact, you don't even have to be a developer. You can do anything from making a song to designing and making a hat. All tangible projects are permitted (sorry, no business plans).</p>
+							<h2>What if I don't know how to code?</h2>
+							<p class="answers">There is nothing wrong with that. Hackathons are amazing places to learn to code! However, you don't even have to be a developer to attend hackBCA. You can do anything from making a song to designing and making a hat. All tangible projects are permitted.</p>
 						</div>
 					</div>
 					<div class="row">
 					<div class="col-md-6">
 							<h2>What should I bring?</h2>
-							<p class="answers">You should bring your laptop (we won't provide computers) &amp; charger, phone &amp; charger, and power strips <i>(recommended)</i>.</p>
+							<p class="answers">You should bring your laptop (we won't provide computers) &amp; charger, phone &amp; charger, and power strips <i>(recommended)</i>. Food will be provided!</p>
 						</div>
 						<div class="col-md-6">
 							<h2>How does judging work?</h2>
@@ -184,11 +201,11 @@
 					<div class="row">
 						<div class="col-md-6">
 							<h2>Who can attend?</h2>
-							<p class="answers">Any student still in high school (or younger) can attend! You don't have to be from NJ (or even from the US).<p>
+							<p class="answers">Any student still in high school (or younger) can attend! You don't have to be from NJ (or even from the US). If you need help convincing your parents, contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a><p>
 						</div>
 						<div class="col-md-6">
 							<h2>Will you reimburse my travel expenses?</h2>
-							<p class="answers">Yes! Contact us for more information at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a>.</p>
+							<p class="answers">At this point in time, we are not sure. Contact us for more information at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></p>
 						</div>
 					</div>
 					<div class="row">
@@ -197,8 +214,8 @@
 							<p class="answers">Nope, you can find one here or work individually.</p>
 						</div>
 						<div class="col-md-6">
-							<h2>Will it be awesome?</h2>
-							<p class="answers">It will be awesome.</p>
+							<h2>How much does it cost?</h2>
+							<p class="answers">Nothing.</p>
 						</div>
 					</div>
 					<br/>
@@ -309,8 +326,8 @@
 		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="pixastic.custom.js" />
 	</body>
 </html>
