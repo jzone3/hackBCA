@@ -21,11 +21,9 @@ body {
 	.hackBCA-header h1 {
 		font-size: 50px;
 	}
-	.social-btn-fixed {
-		display: none;
-	}
-	.social-btn-static {
-		display: block;
+	.social-btn {
+		position: static;
+		margin-bottom: 10px;
 	}
 }
 
@@ -35,6 +33,7 @@ body {
 	}
 	.social-btn {
 		position: static;
+		margin-bottom: 10px;
 	}
 }
 
@@ -44,6 +43,7 @@ body {
 	}
 	.social-btn {
 		position: static;
+		margin-bottom: 10px;
 	}
 }
 
