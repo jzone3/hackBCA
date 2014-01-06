@@ -267,15 +267,31 @@ body {
 	font-size: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+	.nav-bar-btn-samecase {
+		font-size: 23px;
+	}
+	.nav-bar-btn {
+		font-size: 23px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.nav-bar-btn-samecase {
+		font-size: 27px;
+	}
+	.nav-bar-btn {
+		font-size: 27px;
+	}
+}
+
 .nav-bar-btn-samecase {
 	width: 100%;
-	font-size: 26px;
 }
 
 .nav-bar-btn {
 	width: 100%;
 	text-transform: uppercase;
-	font-size: 25px;
 }
 
 .press {
