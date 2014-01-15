@@ -58,6 +58,10 @@ body {
 	}
 }
 
+.judge h4 {
+	font-weight: normal;
+}
+
 .hackBCA-header a {
 	text-decoration: none;
 	color: #2c3e50
@@ -141,7 +145,7 @@ body {
 
 .judges-pane {
 	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 	width: 100%;
 	/*text-transform: uppercase;*/
 	text-align: center;
