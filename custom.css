@@ -17,9 +17,16 @@ body {
 	text-align: center;
 }
 
+.top-flatiron {
+	margin-bottom: 20px;
+}
+
 @media screen and (max-width: 285px) {
 	.hackBCA-header h1 {
 		font-size: 50px;
+	}
+	.top-flatiron {
+		width: 256px;
 	}
 	.social-btn {
 		position: static;
@@ -31,6 +38,9 @@ body {
 	.hackBCA-header h1 {
 		font-size: 70px;
 	}
+	.top-flatiron {
+		width: 256px;
+	}
 	.social-btn {
 		position: static;
 		margin-bottom: 10px;
@@ -41,6 +51,9 @@ body {
 	.hackBCA-header h1 {
 		font-size: 70px;
 	}
+	.top-flatiron {
+		width: 256px;
+	}
 	.social-btn {
 		position: static;
 		margin-bottom: 10px;
@@ -50,6 +63,9 @@ body {
 @media screen and (min-width: 680px) {
 	.hackBCA-header h1 {
 		font-size: 100px;
+	}
+	.top-flatiron {
+		width: 256px;
 	}
 	.social-btn {
 		position: fixed;
@@ -344,4 +360,8 @@ body {
 
 .sponsors-pane .row div {
 	height: 200px;
+}
+
+.cohost {
+	height: 450px !important;
 }
