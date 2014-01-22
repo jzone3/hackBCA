@@ -365,3 +365,7 @@ body {
 .cohost {
 	height: 450px !important;
 }
+
+.smaller {
+	font-size: 80%;
+}
