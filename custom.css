@@ -74,6 +74,12 @@ body {
 	}
 }
 
+@media screen and (max-width: 990px) {
+	.sponsors-pane .col-md-2, .sponsors-pane .col-md-1 {
+		display: none;
+	}
+}
+
 .judge h4 {
 	font-weight: normal;
 }
@@ -360,6 +366,11 @@ body {
 
 .sponsors-pane .row div {
 	height: 200px;
+	background-position: center center !important;
+	background-origin: content-box !important;
+	padding: 0 30px !important;
+	background-size: contain !important;
+	background-repeat: no-repeat !important;
 }
 
 .cohost {
