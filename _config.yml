@@ -1,0 +1,9 @@
+name: "hackBCA"
+description: "Spend 24 hours making something totally tubular."
+
+url: "http://hackbca.com"
+
+paginate: 10
+
+markdown: rdiscount
+permalink: pretty
