@@ -3,6 +3,19 @@
 	src: url('ProximaNova-Light.otf') format("opentype");
 }
 
+@font-face {
+	font-family: "ProximaNova";
+	src: url('ProximaNova-Bold.otf') format("opentype");
+	font-weight: bold;
+}
+
+
+@font-face {
+	font-family: "ProximaNova";
+	src: url('ProximaNova-Extrabold.otf') format("opentype");
+	font-weight: bolder;
+}
+
 body {
 	font-family: ProximaNova, Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	background-color: #ecf0f1;
