@@ -1,0 +1,41 @@
+div.has-nav {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    display: block;
+    top: 0px;
+}
+
+// Universal
+nav {
+    ul {
+        display: none;
+    }
+    .logo b {
+        font-weight: 900;
+    }
+}
+
+// Desktop
+nav {
+    text-align: right;
+    & > a {
+        color: white;
+        padding: 0px 12px;
+        line-height: 80px;
+        display: inline-block;
+        text-shadow: 0 0 8px black;
+    }
+    .logo {
+        float: left;
+        font-size: 150%;
+    }
+    .register {
+        @include button-border($white);
+        margin-top: -6px;
+        &:hover {
+            background: $green;
+            border-color: $green;
+        }
+    }
+}

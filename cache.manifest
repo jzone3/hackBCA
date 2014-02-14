@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# rev 1
+NETWORK:
+/register
+CACHE:
+/scripts/pixastic.custom.js
+# /styles/style.css
+# /styles/editme.css
+# /index.html

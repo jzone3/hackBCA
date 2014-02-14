@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ page.title }} - hackBCA</title>
+    <!-- manifest="/cache.manifest -->
+    {% include header.html %}
+  </head>
+  <body class="{{ page.class }}">
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Navigation -->
+    {% include navigation.html %}
+
+    <!-- Header -->
+    <header style="background-image:url({{ page.background }})">
+      <div class="container">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.lead }}</p>
+      </div>
+    </header>
+
+    <!-- Content -->
+    {{ content }}
+
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>

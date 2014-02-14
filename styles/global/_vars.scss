@@ -1,0 +1,33 @@
+// Acual Variables
+// -> The real stuff.
+
+$fonts: Arial;
+$serif: Georgia;
+$monospace: 'Menlo', 'Consolas', 'Courier New', 'Ubuntu Mono', monospace;
+
+// Copyrighted fonts. 
+$proxima: 'Proxima Nova', 'Proxima',  Arial;
+$proximasoft: 'Proxima Soft', 'Proxima Nova Soft', 'Proxima', 'Proxima Nova', Arial;
+$proximasoft: 'Proxima Condensed', 'Proxima Thin', 'Proxima', 'Proxima Nova', Arial;
+
+// Okay, these are free fonts
+$opensans: 'Open Sans', $fonts;
+$museo: "Museo Slab", $fonts;
+$museo: "Gentium Book Basic", $serif;
+$abril: "Abril Fatface", $serif;
+$kreon: "Kreon", $serif;
+$abril: "Abril Fatface", Impact, $serif;
+$celestia: "CelestiaRedux", $serif;
+$reklame: ReklameScript, "Bursh Script MT", $fonts;
+$satisfy: Satisfy, "Bursh Script MT", $fonts;
+
+// One can Metro UI the crap up out of this with the change of a variable.
+$border-radius: 0px;
+
+// Font size
+$font-size: 17px;
+
+// Mobile viewports
+$desktop: 1170px;
+$tablet: 950px;
+$mobile: 600px;

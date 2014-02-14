@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hackBCA</title>
+    <!-- manifest="/cache.manifest -->
+    {% include header.html %}
+  </head>
+  <body class="{{ page.class }}">
+    <a class="sr-only" href="#content">Skip to main content</a>
+
+    <!-- Navigation -->
+    {% include navigation.html %}
+
+    <!-- Content -->
+    {{ content }}
+
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>

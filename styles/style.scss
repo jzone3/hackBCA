@@ -1,0 +1,470 @@
+// Global Compass Mixins
+@import "compass";
+@import "compass/css3/images";
+
+// Reset
+@import "compass/reset";
+
+// Variables
+@import "global/_colors.scss";
+@import "global/_vars.scss";
+
+// Base
+@import "global/_base.scss";
+
+// Grid System
+@import "grid/_precompiled.scss";
+
+/* ================================================================== */
+/* This file has a mobile-to-tablet, and tablet-to-desktop breakpoint */
+/* ================================================================== */
+
+$media-mobile-max: 767px !default;
+$media-tablet-min: 768px !default;
+$media-tablet-max: 1024px !default;
+$media-desktop-min: 1025px !default;
+// 
+// @import "grid/unsemantic-ie-snap.sass";
+// 
+// @media screen {
+//   @import "grid/unsemantic-grid-base-tablet.sass";
+// }
+// @media screen and (max-width: 767px) {
+//   @import "grid/unsemantic-grid-mobile.sass";
+// }
+// @media screen and (min-width: 768px) and (max-width: 1024px) {
+//   @import "grid/unsemantic-grid-tablet.sass";
+// }
+// @media screen and (min-width: 1025px) {
+//   @import "grid/unsemantic-grid-desktop.sass";
+// }
+
+// Components
+@import "global/_scrollbars.scss";
+
+// Animations
+@import "global/_animations.scss";
+
+// Forms
+@import "global/_forms.scss";
+
+// Buttons
+@import "global/_buttons.scss";
+
+// Typography
+@import "global/_type.scss";
+// -> Proxima Nova by Mark Simonson
+// -@ http://www.marksimonson.com/fonts/view/proxima-nova
+
+// Prettyprint Code
+@import "global/_prettyprint-monokai.scss";
+
+// Modals
+@import "global/_modal.scss";
+
+// Long Shadows
+@import "global/_longshadows.scss";
+
+// Navigation
+@import "_nav.scss";
+
+// Tooltips
+@import "global/_tooltips.scss";
+
+// Custom Styles
+body {
+  font-size: 20px;
+  font-family: $proxima;
+  background: lighten($dark,10%);
+}
+
+h1, h2, h3, h4, h5, .btn, .nav {
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+}
+
+header, section, footer, .footnote {
+  position: relatve; overflow: hidden;
+  padding: 30px 0px;
+  background: white
+}
+
+.sr-only {
+  display: none;
+}
+
+.transition {
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+}
+
+.button {
+  @extend .button-large;
+  border-radius: 6px;
+  margin-right: 0.2em;
+}
+
+.btn {
+  @include button-subtle($orange);
+  outline: none;
+  &.btn-large {
+    @extend .button-jumbo;
+  }
+}
+
+.dark-text-shadow {
+  text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px;
+}
+
+i {
+  font-size: 80%;
+  vertical-align: baseline;
+}
+
+ul.details {
+    border-top: 1px dotted;
+    margin: 1em 2em;
+    li {
+      padding: .5em;
+      border-bottom: 1px dotted;
+    }
+}
+
+a {
+  display: inline-block;
+  @extend .transition;
+  &:active {
+    -webkit-transform: scale(0.9);
+  }
+}
+
+// Header
+header {
+  text-align: center;
+  // padding: 140px 0px 80px;
+  padding: 160px 0px 120px;
+  color: white;
+  background: $dark;
+  text-shadow: 0 0 4px black;
+  background-size: auto;
+  background-position: center;
+  h1 {
+    font-weight: bold;
+  }
+  &:after {
+    background: linear-gradient(rgba(0,0,0,.5) 0%, transparent 100%);
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    content: ' ';
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}
+body.home header {
+  background-image: url(http://tctechcrunch2011.files.wordpress.com/2011/05/tcdisrupt_tc-4.jpg);
+}
+
+// HOMEPAGE //
+// Intro
+#intro {
+  background: $dark;
+  color: white;
+  padding-bottom: 0px;
+  b {
+    display: block;
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: .2em;
+  }
+  blockquote {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+  .container {
+    border-bottom: 1px solid $silver;
+    padding-bottom: 2.5em;
+  }
+}
+
+// Info
+#info {
+  background: $dark;
+  color: white;
+  .col-25, .col-30 {
+    padding-left: 70px;
+    position: relative;
+    i {
+      position: absolute;
+      left: 0px;
+      font-size: 50px;
+      top: 6px;
+      &.icon-event-21 {
+        font-size: 60px!important;
+      }
+    }
+  }
+}
+
+// Judges
+#bios {
+  text-align: center;
+  padding-bottom: 4em;
+  a {
+    color: black;
+    &:hover {
+      color: $blue;
+    }
+  }
+  a.judges {
+    display: block;
+    width: 100%;
+    position: relative;
+    &::after {
+      content: ' ';
+      border-bottom: 1px solid #7d7d7d;
+      width: auto;
+      display: block;
+      margin-top: -2.4em;
+    }
+    h2 {
+      display: inline-block;
+      text-align: center;
+      font-size: 60px;
+      color: #7d7d7d;
+      background: white;
+      padding: 0px 20px;
+    }
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+    border-radius: 300px;
+    background: linear-gradient(to bottom, #feffff 0%,#c8c8c8 100%);
+    box-shadow: 0 0 6px black;
+    transition: all .2s linear;
+    -webkit-transition: all .2s ease;
+  }
+  a:hover img {
+    box-shadow: 0 0 16px $blue;
+    transform:rotate(16deg);
+    -ms-transform:rotate(16deg);
+    -webkit-transform:rotate(16deg);
+
+  }
+}
+
+// ABOUT
+#team {
+  text-align: center;
+  .team-circle-img-bigger, .team-circle-img {
+    border-radius: 500px;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    background-size: cover;
+  }
+}
+// SCHEDULE
+
+// JUDGES
+.judge {
+    background-color: gray;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 0 0 4px black;
+    padding: 120px 0px;
+    a {
+      color: white;
+      border-bottom: 1px dotted white;
+    }
+    &#alexis {
+      background-image: url(http://rack.2.mshcdn.com/media/ZgkyMDEzLzEwLzIyLzA0L2FsZXhpc29oYW5pLjI3MzhiLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/8d0f9246/905/alexis-ohanian.jpg);
+    }
+    &#biggs {
+      background-image: url(http://www.bigwidelogic.com/wp-content/uploads/2013/01/NetokracijaBalkanTour8WEB.jpg);
+    }
+    &#kroll {
+      background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/10/article-2536973-1A8A306000000578-243_634x450.jpg);
+    }
+    &#griffel {
+      background-image: url(http://d13pix9kaak6wt.cloudfront.net/background/mattangriffel_1345054788_91.jpg);
+      background-position: bottom;
+    }
+
+}
+
+// PRIZES
+#podium {
+  #gold, #silver, #bronze {
+    color: white;
+    text-align: center;
+    h2 {
+      font-weight: bold;
+    }
+    a {
+      color: white;
+      padding: 10px;
+      border-top: 1px dotted;
+      display: block;
+    }
+  }
+  #gold {
+    background: #E0C40B;
+    h2 {
+      text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F;
+    }
+  }
+  #silver {
+    background: #666;
+    h2 {
+      text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F;
+    }
+  }
+  #bronze {
+    background: #8D5B33;
+    h2 {
+      text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F;
+    }
+  }
+}
+// PRESS
+#press {
+  .col-50 {
+    padding: 10px!important;
+  }
+  .newspaper {
+    background-color: #ffffe3;
+    color: #000000;
+    font-family: Georgia;
+    padding: 12px;
+    display: inline-block;
+    background-position: center;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    background-repeat: no-repeat;
+    outline: solid rgba(0, 0, 0, 0.3) 1px;
+    outline-offset: -1px;
+    position: relative;
+    &.nj {
+      h3 {
+        font-family: Arvo, Arial;
+        font-weight: bold;
+      }
+    }
+    &.blank {
+      opacity: 0.5;
+      background: lightGray;
+    }
+    img {
+      width: 100%;
+    }
+    span {
+      color: gray;
+      display: block;
+      margin-top: -8px;
+      margin-bottom: 2px;
+    }
+  }
+}
+
+// RULES
+#rules, #conduct {
+  text-align: center;
+  .container {
+    max-width: 700px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+#rules {
+  background: $dark;
+  color: $silver;
+}
+
+// Footer
+footer {
+  background: $dark;
+  color: $silver;
+  overflow: visible;
+   blockquote {
+    border-left: 3px solid;
+    padding: 10px 15px;
+    line-height: 1.3em;
+    @extend .transition;
+    small {
+      display: block;
+      font-size: 80%;
+      &:before {
+        content: '\2014 \00A0';
+        padding-right: 2px;
+      }
+    }
+  }
+  a.fb-button {
+    background: linear-gradient(#4C69BA, #3B55A0);
+    border: none;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    text-shadow: 0 -1px 0 #354C8C;
+    font-size: 12px;
+    position: relative;
+    vertical-align: bottom;
+    font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
+    padding: 0px 5px;
+  }
+  a.twitter-follow-button, a.github-btn {
+    font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+    position: relative;
+    background-color: #EEE;
+    background-image: -webkit-linear-gradient(#FFF,#DEDEDE);
+    background-image: linear-gradient(#FFF,#DEDEDE);
+    border: #CCC solid 1px;
+    border-radius: 3px;
+    color: #333;
+    font-weight: bold;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 20px;
+    max-width: 100%;
+    padding: 0px 5px;
+    i {
+      color: #55acee;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+      -webkit-transform: scale(1.5);
+      display: inline-block;
+      margin: 5px 0px;
+      &.icon-github {
+        color: black;
+      }
+    }
+  }
+}
+
+.footnote {
+  background: lighten($dark,10%);
+  color: $silver;
+  a {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer, .footnote {
+    display: none;
+  }
+}
