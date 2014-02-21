@@ -78,6 +78,10 @@ body {
   background: lighten($dark,10%);
 }
 
+input, div.div.gm-iw, div.gm-style-mtc, div.gm-style-cc {
+  font-family: $proxima!important;
+}
+
 h1, h2, h3, h4, h5, .btn, .nav {
   font-weight: 500;
 }
@@ -145,6 +149,28 @@ a {
   }
 }
 
+.linearound {
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  &::after {
+    content: ' ';
+    border-bottom: 1px solid #7d7d7d;
+    width: auto;
+    display: block;
+    margin-top: -2.4em;
+  }
+  h1, h2 {
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    color: #7d7d7d;
+    background: white;
+    padding: 0px 20px;
+  }
+}
+
 // Header
 header {
   text-align: center;
@@ -173,9 +199,6 @@ header {
     left: 0;
     z-index: 0;
   }
-}
-body.home header {
-  background-image: url(http://tctechcrunch2011.files.wordpress.com/2011/05/tcdisrupt_tc-4.jpg);
 }
 
 // HOMEPAGE //
@@ -268,6 +291,23 @@ body.home header {
 
   }
 }
+#sponsors {
+  text-align: center;
+  background: #ECF0F1;
+  h1 {
+    background: #ECF0F1;
+  }
+  img {
+    max-width: 100%;
+  }
+  .row {
+    display: block;
+    vertical-align: center;
+    .col-25 {
+      max-width: 75%;
+    }
+  }
+}
 
 // ABOUT
 #team {
@@ -279,7 +319,32 @@ body.home header {
     display: inline-block;
     background-size: cover;
   }
+  div.col-25 {
+      margin-bottom: 50px;
+  }
 }
+#faq {
+  p.answers {
+    padding-bottom: 1em;
+    border-bottom: 1px solid lightGray;
+    margin-bottom: 1em;
+  }
+  .notice {
+    background-color: lightGray;
+    padding: 12px;
+    border-radius: 4px;
+    text-align: center;
+  }
+}
+#map-canvas {
+  position: relative;
+  background: $red;
+  color: white;
+  text-align: center;
+  height: 300px;
+  box-shadow: 0 0 2px gray;
+}
+
 // SCHEDULE
 
 // JUDGES
@@ -420,7 +485,9 @@ body.home header {
     }
   }
 }
-
+#access {
+  text-align: center;
+}
 // RULES
 #rules, #conduct {
   text-align: center;
@@ -453,6 +520,12 @@ footer {
         content: '\2014 \00A0';
         padding-right: 2px;
       }
+    }
+  }
+  .facebook-btn {
+    iframe {
+      max-width: 400px!important;
+      max-height: 300px!important;
     }
   }
   a.fb-button {
@@ -511,6 +584,11 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  .linearound h1, .linearound h2 {
+    font-size: 50px;
+    // border-top: 1px solid #7D7D7D;
+    // padding-top: 40px;
+  }
   header {
     padding: 40px 20px;
     font-weight: bold;
@@ -540,8 +618,8 @@ footer {
       padding: 0px;
     }
   }
-  footer, .footnote {
-    display: none;
+  footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
+    display: none!important;
   }
   .back2top {
     display: block;

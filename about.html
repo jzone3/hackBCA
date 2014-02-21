@@ -3,18 +3,130 @@ layout: default
 class: about
 title: About
 lead: WE ARE HACKBCA.
-background: /images/banners/pennapps.jpg
+background:
 ---
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0bjUUQmiaxPuS11USZgxDC-WLFsTb1lM&v=3.exp&sensor=true&region=US"></script>
+<script>
+/* Google Maps */
+    google.maps.visualRefresh = true;
+    var map;
+    function initialize() {
+      var myLatlng = new google.maps.LatLng(40.9029127,-74.0339983);
+      var mapOptions = {
+        zoom: 16,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      }
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Bergen County Academies'
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    function calculateRoute(from, to) {
+        // Center initialized to Naples, Italy
+        var myOptions = {
+          zoom: 10,
+          center: new google.maps.LatLng(40.9029127,-74.0339983),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        // Draw the map
+        var mapObject = new google.maps.Map(document.getElementById("map-canvas"), myOptions);
+ 
+        var directionsService = new google.maps.DirectionsService();
+        var directionsRequest = {
+          origin: from,
+          destination: to,
+          travelMode: google.maps.DirectionsTravelMode.DRIVING,
+          unitSystem: google.maps.UnitSystem.METRIC
+        };
+        directionsService.route(
+          directionsRequest,
+          function(response, status)
+          {
+            if (status == google.maps.DirectionsStatus.OK)
+            {
+              new google.maps.DirectionsRenderer({
+                map: mapObject,
+                directions: response
+              });
+            }
+            else
+              $("#error").append("Unable to retrieve your route<br />");
+          }
+        );
+      }
+ 
+      $(document).ready(function() {
+        // If the browser supports the Geolocation API
+        if (typeof navigator.geolocation == "undefined") {
+          $("#error").text("Your browser doesn't support the Geolocation API");
+          return;
+        }
+ 
+        $("#from-link, #to-link").click(function(event) {
+          event.preventDefault();
+          var addressId = this.id.substring(0, this.id.indexOf("-"));
+ 
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var geocoder = new google.maps.Geocoder();
+            geocoder.geocode({
+              "location": new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+            },
+            function(results, status) {
+              if (status == google.maps.GeocoderStatus.OK)
+                $("#" + addressId).val(results[0].formatted_address);
+              else
+                $("#error").append("Unable to retrieve your address<br />");
+            });
+          },
+          function(positionError){
+            $("#error").append("Error: " + positionError.message + "<br />");
+          },
+          {
+            enableHighAccuracy: true,
+            timeout: 10 * 1000 // 10 seconds
+          });
+        });
+ 
+        $("#calculate-route").submit(function(event) {
+          event.preventDefault();
+          calculateRoute($("#from").val(), $("#to").val());
+        });
+      });
+</script>
 <section id="location"><div class="container">
-    <h1>Location</h1>
-    Bergen County Academies
-    <br>200 Hackensack Ave 
-    <br>Hackensack, NJ 07601
+    <div class="linearound"><h1>Venue</h1></div><br><br>
+    <div class="row">
+        <div class="col-50">
+            <b>Bergen County Academies</b>
+            <br>200 Hackensack Ave 
+            <br>Hackensack, NJ 07601
+            <br>
+            <a href="https://www.google.com/maps/dir//Bergen+County+Technical+Schools,+200+Hackensack+Ave,+Hackensack,+NJ+07601/" class="btn btn-maps"><i class="icon-direction"></i> Google Maps</a> <a href="http://bcts.bergen.org/index.php/bergen-county-academies?layout=blog" class="btn btn-school"><i class="icon-flag"></i> School Website</a>
+        </div>
+        <div class="col-50 hidden-mobile">
+            <b>Get Directions:</b><br>
+            <form id="calculate-route" name="calculate-route" action="#" method="get">
+                <!-- <label class="hidden" for="from">From:</label> -->
+                <input type="text" id="from" name="from" required="required" placeholder="Enter Address" class="field" size="30" style="margin-left: 0px!important" />
+                <!-- <label class="hidden" for="to">To:</label> -->
+                <input class="hidden" type="hidden" id="to" name="to" required="required" placeholder="Bergen County Academies" value="Bergen County Academies" size="30" />
+                <input class="btn btn-go" type="submit" value="Get Directions" />
+                <input class="btn btn-reset" type="reset" />
+                <a class="btn btn-detect" id="from-link" href="#"><i class="icon-location"></i> Detect Location</a>
+            </form>
+            <br>
+        </div>
+    </div>
 </div></section>
+<div id="map-canvas" class="hidden-mobile"> Error loading Google Maps. </div>
 <section id="faq">
     <div class="container">
-        <h1>FAQ</h1><br>
-        <div class="row">
+        <div class="linearound"><h1>FAQ</h1></div><br><br>
         <div class="row">
             <div class="col-50">
                 <h3>What is hackBCA?</h3>
@@ -24,7 +136,6 @@ background: /images/banners/pennapps.jpg
                 <h3>What if I don't know how to code?</h3>
                 <p class="answers">There is nothing wrong with that. Hackathons are amazing places to learn to code! However, you don't even have to be a developer to attend hackBCA. You can do anything from making a song to designing and making a hat. All tangible projects are permitted.</p>
             </div>
-        </div>
             <div class="col-50">
                 <h3>What is a hackathon?</h3>
                 <p class="answers">A hackathon is an event in which teams spend the weekend building something awesome (and then demo it). hackBCA is open to anyone, from the absolute beginner to the professional hacker. Check out Dave Fontenot's post on <a href="https://medium.com/hackathons-anonymous/3d5413601c05">"What is a hackathon?"</a></p>
@@ -41,8 +152,10 @@ background: /images/banners/pennapps.jpg
             </div>
             <div class="col-50">
                 <h3>I'm not in high school anymore, can I still come and watch the demos?</h3>
-                <p class="answers">Definitely! You can get a ticket for the demos below:</p>
-                <a href="https://www.eventbrite.com/event/8914905723"><button type="button" class="btn btn-lg signup-btn demos-btn">Demos</button></a>
+                <p class="answers">Definitely! You can get a ticket for the demos below:
+                    <br>
+                <a href="https://www.eventbrite.com/event/8914905723" class="btn btn-lg signup-btn demos-btn btn-block">Demos</a>
+                </p>
             </div>
         </div>
         <div class="row">
@@ -58,7 +171,7 @@ background: /images/banners/pennapps.jpg
         <div class="row">
             <div class="col-50">
                 <h3>Who can attend?</h3>
-                <p class="answers">Any student still in high school (or younger) can attend! You don't have to be from NJ (or even from the US). If you need help convincing your parents, contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></p><p>
+                <p class="answers">Any student still in high school can attend! You don't have to be from NJ (or even from the US). If you need help convincing your parents, contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></p><p>
             </p></div>
             <div class="col-50">
                 <h3>I know a company that wants to sponsor, what should I tell them?</h3>
@@ -76,129 +189,82 @@ background: /images/banners/pennapps.jpg
             </div>
         </div>
         <br>
-        <h3 class="normal">If you have any other questions, don't hesitate to contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></h3>
     </div>
-</section>
-<section id="about"><div class="container">
-    <h2>How it all started...</h2>
-    <p>We love everything about hackathons... well, almost everything. When we noticed that we have never been to a high school hackathon, and that some hackathons don't even allow high school students to attend (only college students), we set out to fix this. hackBCA is one of the first ever high school hackathons!</p>
-    <br>
-    <br>
-    <h2>About Bergen County Academies High School</h2>
-    <p>WWe would like to thank <a href="http://bcts.bergen.org/index.php/bergen-county-academies?layout=blog">Bergen County Academies</a> for being a gracious and accommodating host of hackBCA! The whole team currently attends this free, public magnet high school located on the Dr. John Grieco Campus in Hackensack, New Jersey.
-    </p>
+<!-- </section>
+<section id="about"> --> <div class="container">
+    <div class="row">
+        <div class="col-50">
+            <h3>How it all started...</h3>
+                <p class="answers">We love everything about hackathons... well, almost everything. When we noticed that we have never been to a high school hackathon, and that some hackathons don't even allow high school students to attend (only college students), we set out to fix this. hackBCA is one of the first ever high school hackathons!</p>
+        </div>
+        <div class="col-50">
+            <h3>About Bergen County Academies High School</h3>
+            <p class="answers">We would like to thank <a href="http://bcts.bergen.org/index.php/bergen-county-academies?layout=blog">Bergen County Academies</a> for being a gracious and accommodating host of hackBCA! The whole team currently attends this free, public magnet high school located on the Dr. John Grieco Campus in Hackensack, New Jersey.</p>
+        </div>
+    </div>
+    <div class="notice">
+        <h3><b>If you have any other questions, don't hesitate to contact us at <a href="mailto:contact@hackBCA.com">contact@hackBCA.com</a></b></h3>
+    </div>
 </div></section>
 <section id="team"><div class="container">
-    <h1>Team</h1>
+    <div class="linearound"><h1>Team</h1></div><br><br>
     <div class="team row">
         <div class="col-25">
             <a href="http://imjaredz.com">
             <div class="team-circle-img-bigger" style="background-image: url('/images/faces/jared.jpg');"></div>
-            <h3>Jared Zoneraich</h3></a><br>
+            <h3>Jared Zoneraich</h3></a>
         </div>
         <div class="col-25">
             <a href="https://www.facebook.com/0010101011010101110010010110110110101011101010110o">
             <div class="team-circle-img-bigger" style="background-image: url('/images/faces/edmon.jpg');"></div>
-            <h3>Edmon Berry</h3></a><br>
+            <h3>Edmon Berry</h3></a>
         </div>
         <div class="col-25">
             <a href="https://www.facebook.com/zachthepianoman">
             <div class="team-circle-img-bigger" style="background-image: url('/images/faces/zach.jpg');"></div>
-            <h3>Zach Kaplan</h3></a><br>
+            <h3>Zach Kaplan</h3></a>
         </div>
         <div class="col-25">
             <div class="team-circle-img-bigger" style="background-image: url('/images/faces/ben.jpg');"></div>
-            <h3>Ben Judd</h3><br>
+            <h3>Ben Judd</h3>
         </div>
     </div>
     <div class="team row">
         <div class="col-25">
             <div class="team-circle-img" style="background-image: url('/images/faces/jiwon.jpg');"></div>
-            <h4>Jiwon Lee</h4><br>
+            <h4>Jiwon Lee</h4>
         </div>
         <div class="col-25">
             <div class="team-circle-img" style="background-image: url('/images/faces/paras.jpg');"></div>
-            <h4>Paras Modi</h4><br>
+            <h4>Paras Modi</h4>
         </div>
         <div class="col-25">
             <a href="https://soundcloud.com/david-zilburg">
             <div class="team-circle-img" style="background-image: url('/images/faces/david.jpg');"></div>
-            <h4>David Zilburg</h4></a><br>
+            <h4>David Zilburg</h4></a>
         </div>
         <div class="col-25">
             <a href="http://www.jakepodell.com">
             <div class="team-circle-img" style="background-image: url('/images/faces/jake.png');"></div>
-            <h4>Jake Podell</h4></a><br>
+            <h4>Jake Podell</h4></a>
         </div>
-        <div class="col-md-1">&nbsp;</div>
     </div>
     <div class="team row">
-        <div class="col-10">&nbsp;</div>
         <div class="col-25">
             <div class="team-circle-img" style="background-image: url('/images/faces/avik.jpg');"></div>
-            <h4>Avik Dureja</h4><br>
+            <h4>Avik Dureja</h4>
         </div>
         <div class="col-25">
             <div class="team-circle-img" style="background-image: url('/images/faces/meredith.jpg');"></div>
-            <h4>Meredith Hoo</h4><br>
+            <h4>Meredith Hoo</h4>
         </div>
         <div class="col-25">
             <div class="team-circle-img" style="background-image: url('/images/faces/aayush.jpg');"></div>
-            <h4>Aayush Parekh</h4><br>
+            <h4>Aayush Parekh</h4>
         </div>
-        <div class="col-10">&nbsp;</div>
+        <div class="col-md-25">
+           <div class="team-circle-img" style="background-image: url('/images/faces/eric.jpg');"></div>
+           <h4>Eric Kim</h4>
+        </div>
     </div>
 </div></section>
-<section id="sponsors">
-    <div class="container">
-        <h1>Sponsors</h1>
-        <br>
-        <div class="row">
-            <!-- <div class="col-15">&nbsp;</div> -->
-            <a href="http://flatironschool.com/"><img src="/images/sponsors/flatironschool.png" alt=""></a>
-            <!-- <div class="col-15">&nbsp;</div> -->
-        </div>
-        <div class="row">
-            <div class="col-15">&nbsp;</div>
-            <a href="http://sendgrid.com/"><img src="/images/sponsors/sendgrid.png" alt=""></a>
-            <a href="http://www.twilio.com/"><img src="/images/sponsors/twilio.png" alt=""></a>
-            <div class="col-15">&nbsp;</div>
-        </div>
-        <br>
-        <div class="row">
-            <a href="https://warbyparker.com/"><img src="/images/sponsors/warbyparker.png" alt=""></a>
-            <a href="https://github.com/"><img src="/images/sponsors/github.png" alt=""></div></a>
-            <a href="https://www.startupthreads.com/"><img src="/images/sponsors/startupthreads.png" alt=""></a>
-        </div>
-        <br>
-        <div class="row">
-            <a href="http://www.readyforce.com/"><img src="/images/sponsors/readyforce.png" alt=""></a>
-            <a href="https://www.dwolla.com/"><img src="/images/sponsors/dwolla.png" alt=""></a>
-            <a href="https://getpebble.com/"><img src="/images/sponsors/pebble.png" alt="">></a>
-            <a href="https://www.dropbox.com/"><img src="/images/sponsors/dropbox.png" alt=""></div></a>
-        </div>
-        <br>
-        <div class="row">
-            <a href="https://nytechday.com/"><img src="/images/sponsors/nytd.png" alt=""></a>
-            <a href="https://foursquare.com"><img src="/images/sponsors/foursquare.png" alt=""></a>
-            <a href="http://tokbox.com/"><img src="/images/sponsors/tokbox.png" alt=""></a>
-            <a href="http://ordr.in/"><img src="/images/sponsors/coderdojo.png" alt=""></a>
-        </div>
-        <br>
-        <div class="row">
-            <a href="http://www.shapeways.com/"><img src="/images/sponsors/shapeways.png" alt=""></a>
-            <a href="http://www.startupvitamins.com/"><img src="/images/sponsors/startupvitamins.png" alt=""></a>
-            <a href="http://ordr.in/"><img src="/images/sponsors/ordrin.png" alt=""></a>
-            <a href="http://venturepact.com/"><img src="/images/sponsors/venturepact.png" alt=""></a>
-        </div>
-        <div class="row">
-            <a href="http://hackersunder20.com/"><img src="/images/logos/hu20.png" alt=""></a>
-        </div>
-        <br>
-        <a href="/press/sponsors.pdf">Get your name here!</a>
-        <br><br><br>
-        <!-- <div class="sponsor-btn-huge">
-            <a href="sponsors.pdf"><button type="button" class="btn btn-lg btn-info">Get your name<br/>here</button></a>
-        </div> -->
-    </div>
-</section>
