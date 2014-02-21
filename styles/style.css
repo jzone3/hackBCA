@@ -2463,7 +2463,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   box-shadow: 0 0 12px black; }
 
 /* line 9, global/_buttons.scss */
-.button, nav .register, .btn {
+.button, .btn {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -2488,7 +2488,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   border-radius: 300px; }
 
 /* line 161, global/_buttons.scss */
-.button-large, .button, nav .register, .btn {
+.button-large, .button, .btn {
   font-size: 18px;
   line-height: 1.2em; }
 
@@ -2789,49 +2789,142 @@ modal.visible window {
     modal window h1 {
       line-height: 66px;
       padding: 0px 10px 0px 76px !important; } }
-/* line 1, _nav.scss */
-div.has-nav {
-  position: absolute;
-  z-index: 50;
-  width: 100%;
-  display: block;
-  top: 0px; }
-
-/* line 11, _nav.scss */
+/* line 3, _nav.scss */
 nav ul {
   display: none; }
-/* line 14, _nav.scss */
+/* line 6, _nav.scss */
 nav .logo b {
   font-weight: 900; }
 
-/* line 20, _nav.scss */
-nav {
-  text-align: right; }
-  /* line 22, _nav.scss */
-  nav > a {
-    color: white;
-    padding: 0px 12px;
-    line-height: 80px;
-    display: inline-block;
-    text-shadow: 0 0 8px black; }
-  /* line 29, _nav.scss */
-  nav .logo {
+@media screen and (min-width: 768px) {
+  /* line 14, _nav.scss */
+  .bar.mobile-header, .bar.mobile-footer {
+    display: none; }
+
+  /* line 18, _nav.scss */
+  div.has-nav {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    display: block;
+    top: 0px; }
+
+  /* line 26, _nav.scss */
+  nav {
+    text-align: right;
+    line-height: 80px; }
+    /* line 29, _nav.scss */
+    nav > a {
+      color: white;
+      padding: 0px 12px;
+      display: inline-block;
+      text-shadow: 0 0 8px black; }
+    /* line 35, _nav.scss */
+    nav .logo {
+      float: left;
+      font-size: 150%; }
+    /* line 39, _nav.scss */
+    nav .register {
+      border-radius: 0px;
+      color: white;
+      border: 1px solid white;
+      margin-top: -6px;
+      line-height: 2em; }
+      /* line 33, global/_buttons.scss */
+      nav .register:hover {
+        background: white;
+        color: white; }
+      /* line 43, _nav.scss */
+      nav .register:hover {
+        background: #62bc4d;
+        border-color: #62bc4d; } }
+@media screen and (max-width: 767px) {
+  /* line 55, _nav.scss */
+  .bar.mobile-header, .bar.mobile-footer {
+    display: block; }
+
+  /* line 59, _nav.scss */
+  .nav {
+    background: #47a3da;
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    top: 0;
+    z-index: 1000; }
+
+  /* line 68, _nav.scss */
+  .nav .logo {
+    display: none; }
+
+  /* line 78, _nav.scss */
+  .nav a {
+    display: block;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 300;
+    border-bottom: 1px solid #258ecd;
+    padding: 0.7em 1em; }
+    /* line 86, _nav.scss */
+    .nav a:hover {
+      background: #258ecd; }
+    /* line 90, _nav.scss */
+    .nav a:active {
+      background: #afdefa;
+      color: #47a3da; }
+
+  /* line 97, _nav.scss */
+  .nav-left {
+    left: -240px; }
+
+  /* line 101, _nav.scss */
+  .nav-left.nav-open {
+    left: 0px; }
+
+  /* line 105, _nav.scss */
+  body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0; }
+
+  /* line 111, _nav.scss */
+  .nav-push {
+    left: 240px; }
+
+  /* line 117, _nav.scss */
+  body,
+  .nav,
+  .nav-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease; } }
+/* line 126, _nav.scss */
+.bar {
+  user-select: none;
+  -webkit-user-select: none;
+  text-align: center;
+  background: #3E5771;
+  color: white;
+  height: 44px;
+  line-height: 44px;
+  font-size: 1.1em; }
+  /* line 137, _nav.scss */
+  .bar a {
+    color: white; }
+  /* line 140, _nav.scss */
+  .bar #toggle-nav {
     float: left;
-    font-size: 150%; }
-  /* line 33, _nav.scss */
-  nav .register {
-    border-radius: 0px;
-    color: white;
-    border: 1px solid white;
-    margin-top: -6px; }
-    /* line 33, global/_buttons.scss */
-    nav .register:hover {
-      background: white;
-      color: white; }
-    /* line 36, _nav.scss */
-    nav .register:hover {
-      background: #62bc4d;
-      border-color: #62bc4d; }
+    padding: 0 8px; }
+    /* line 143, _nav.scss */
+    .bar #toggle-nav i {
+      display: inline-block;
+      font-size: 110%;
+      vertical-align: text-bottom; }
+    /* line 148, _nav.scss */
+    .bar #toggle-nav span {
+      font-size: 0.6em;
+      line-height: 1em;
+      display: inline-block;
+      margin-top: -3px; }
 
 /* line 3, global/_tooltips.scss */
 attr {
@@ -2930,7 +3023,7 @@ header, section, footer, .footnote {
   -webkit-transition: all .2s ease-in-out; }
 
 /* line 104, style.scss */
-.button, nav .register, .btn {
+.button, .btn {
   border-radius: 6px;
   margin-right: 0.2em; }
 

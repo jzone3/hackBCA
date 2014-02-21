@@ -1,11 +1,3 @@
-div.has-nav {
-    position: absolute;
-    z-index: 50;
-    width: 100%;
-    display: block;
-    top: 0px;
-}
-
 // Universal
 nav {
     ul {
@@ -17,25 +9,147 @@ nav {
 }
 
 // Desktop
-nav {
-    text-align: right;
-    & > a {
-        color: white;
-        padding: 0px 12px;
+@media screen and (min-width: 768px) {
+
+    .bar.mobile-header, .bar.mobile-footer {
+        display: none;
+    }
+
+    div.has-nav {
+        position: absolute;
+        z-index: 50;
+        width: 100%;
+        display: block;
+        top: 0px;
+    }
+
+    nav {
+        text-align: right;
         line-height: 80px;
-        display: inline-block;
-        text-shadow: 0 0 8px black;
+        & > a {
+            color: white;
+            padding: 0px 12px;
+            display: inline-block;
+            text-shadow: 0 0 8px black;
+        }
+        .logo {
+            float: left;
+            font-size: 150%;
+        }
+        .register {
+            @include button-border($white);
+            margin-top: -6px;
+            line-height: 2em;
+            &:hover {
+                background: $green;
+                border-color: $green;
+            }
+        }
     }
-    .logo {
-        float: left;
-        font-size: 150%;
+
+}
+
+// Mobile
+@media screen and (max-width: 767px) {
+
+    .bar.mobile-header, .bar.mobile-footer {
+        display: block;
     }
-    .register {
-        @include button-border($white);
-        margin-top: -6px;
+
+    .nav {
+        background: #47a3da;
+        position: fixed;
+        width: 240px;
+        height: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .nav .logo {
+        display: none;
+        // color: #afdefa;
+        // font-size: 1.9em;
+        // padding: 20px;
+        // margin: 0;
+        // font-weight: 300;
+        // background: #0d77b6;
+    }
+
+    .nav a {
+        display: block;
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 300;
+        border-bottom: 1px solid #258ecd;
+        padding: 0.7em 1em;
+
         &:hover {
-            background: $green;
-            border-color: $green;
+            background: #258ecd;
+        }
+
+        &:active {
+            background: #afdefa;
+            color: #47a3da;
+        }
+
+    }
+
+    .nav-left {
+        left: -240px;
+    }
+
+    .nav-left.nav-open {
+        left: 0px;
+    }
+
+    body {
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+    }
+
+    .nav-push {
+        left: 240px;
+    }
+    
+    body,
+    .nav,
+    .nav-push {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    } 
+
+}
+
+// Bars
+.bar {
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+    background: #3E5771;
+    color: white;
+    height: 44px;
+    line-height: 44px;
+    font-size: 1.1em;
+    // For iOS7 Webapps
+    // margin-top: 30px;
+    a {
+        color: white;
+    }
+    #toggle-nav {
+        float: left;
+        padding: 0 8px;
+        i {
+            display: inline-block;
+            font-size: 110%;
+            vertical-align: text-bottom;
+        }
+        span {
+            font-size: 0.6em;
+            line-height: 1em;
+            display: inline-block;
+            margin-top: -3px;
         }
     }
 }

@@ -1,1 +1,0 @@
-(function(){var e="http://cors.io/closings.victorlourng.com/quotes/";$.getJSON(e,{format:"json"}).done(function(e){console.log(e.quote);$("footer blockquote span").html(e.quote);$("footer blockquote small").html(e.author)})})();
