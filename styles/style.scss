@@ -82,6 +82,10 @@ h1, h2, h3, h4, h5, .btn, .nav {
   font-weight: 500;
 }
 
+h1 {
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -92,7 +96,7 @@ header, section, footer, .footnote {
   background: white
 }
 
-.sr-only {
+.sr-only, .back2top {
   display: none;
 }
 
@@ -516,7 +520,37 @@ footer {
       padding-bottom: 10px;
     }
   }
+  #info {
+    text-align: center;
+    .col-25 i, .col-30 i {
+      position: relative;
+      margin-top: 20px;
+      display: block;
+    }
+  }
+  #bios {
+    a {
+      display: block;
+      margin-bottom: 3em;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+      float: left;
+      padding: 0px;
+    }
+  }
   footer, .footnote {
     display: none;
+  }
+  .back2top {
+    display: block;
+    a {
+      color: white;
+      display: block;
+      line-height: 3em;
+      text-align: center;
+      margin-bottom: -500px;
+    }
   }
 }

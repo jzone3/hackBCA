@@ -3006,31 +3006,35 @@ h1, h2, h3, h4, h5, .btn, .nav {
   font-weight: 500; }
 
 /* line 85, style.scss */
+h1 {
+  text-align: center; }
+
+/* line 89, style.scss */
 img {
   max-width: 100%; }
 
-/* line 89, style.scss */
+/* line 93, style.scss */
 header, section, footer, .footnote {
   position: relatve;
   overflow: hidden;
   padding: 30px 0px;
   background: white; }
 
-/* line 95, style.scss */
-.sr-only {
+/* line 99, style.scss */
+.sr-only, .back2top {
   display: none; }
 
-/* line 99, style.scss */
+/* line 103, style.scss */
 .transition, a, footer blockquote {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out; }
 
-/* line 104, style.scss */
+/* line 108, style.scss */
 .button, .btn {
   border-radius: 6px;
   margin-right: 0.2em; }
 
-/* line 110, style.scss */
+/* line 114, style.scss */
 .btn {
   background: #f39c12;
   color: white;
@@ -3045,32 +3049,32 @@ header, section, footer, .footnote {
   .btn:active, .btn:focus {
     background-color: #d2850b; }
 
-/* line 118, style.scss */
+/* line 122, style.scss */
 .dark-text-shadow {
   text-shadow: rgba(41, 52, 63, 0.4) 0px -1px 0px; }
 
-/* line 122, style.scss */
+/* line 126, style.scss */
 i {
   font-size: 80%;
   vertical-align: baseline; }
 
-/* line 127, style.scss */
+/* line 131, style.scss */
 ul.details {
   border-top: 1px dotted;
   margin: 1em 2em; }
-  /* line 130, style.scss */
+  /* line 134, style.scss */
   ul.details li {
     padding: .5em;
     border-bottom: 1px dotted; }
 
-/* line 136, style.scss */
+/* line 140, style.scss */
 a {
   display: inline-block; }
-  /* line 139, style.scss */
+  /* line 143, style.scss */
   a:active {
     -webkit-transform: scale(0.9); }
 
-/* line 145, style.scss */
+/* line 149, style.scss */
 header {
   text-align: center;
   padding: 160px 0px 120px;
@@ -3079,13 +3083,13 @@ header {
   text-shadow: 0 0 4px black;
   background-size: auto;
   background-position: center; }
-  /* line 154, style.scss */
+  /* line 158, style.scss */
   header .container {
     z-index: 10; }
-  /* line 157, style.scss */
+  /* line 161, style.scss */
   header h1 {
     font-weight: bold; }
-  /* line 162, style.scss */
+  /* line 166, style.scss */
   header:after {
     background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     position: absolute;
@@ -3096,72 +3100,72 @@ header {
     left: 0;
     z-index: 0; }
 
-/* line 173, style.scss */
+/* line 177, style.scss */
 body.home header {
   background-image: url(http://tctechcrunch2011.files.wordpress.com/2011/05/tcdisrupt_tc-4.jpg); }
 
-/* line 179, style.scss */
+/* line 183, style.scss */
 #intro {
   background: #2c3e50;
   color: white;
   padding-bottom: 0px; }
-  /* line 183, style.scss */
+  /* line 187, style.scss */
   #intro b {
     display: block;
     text-align: center;
     font-size: 120%;
     margin-bottom: .2em; }
-  /* line 189, style.scss */
+  /* line 193, style.scss */
   #intro blockquote {
     max-width: 500px;
     margin: auto;
     text-align: center; }
-  /* line 194, style.scss */
+  /* line 198, style.scss */
   #intro .container {
     border-bottom: 1px solid #bdc3c7;
     padding-bottom: 2.5em; }
 
-/* line 201, style.scss */
+/* line 205, style.scss */
 #info {
   background: #2c3e50;
   color: white; }
-  /* line 204, style.scss */
+  /* line 208, style.scss */
   #info .col-25, #info .col-30 {
     padding-left: 70px;
     position: relative; }
-    /* line 207, style.scss */
+    /* line 211, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: absolute;
       left: 0px;
       font-size: 50px;
       top: 6px; }
-      /* line 212, style.scss */
+      /* line 216, style.scss */
       #info .col-25 i.icon-event-21, #info .col-30 i.icon-event-21 {
         font-size: 60px !important; }
 
-/* line 220, style.scss */
+/* line 224, style.scss */
 #bios {
   text-align: center;
   padding-bottom: 4em; }
-  /* line 223, style.scss */
+  /* line 227, style.scss */
   #bios a {
     color: black; }
-    /* line 225, style.scss */
+    /* line 229, style.scss */
     #bios a:hover {
       color: #1e98d3; }
-  /* line 229, style.scss */
+  /* line 233, style.scss */
   #bios a.judges {
     display: block;
     width: 100%;
     position: relative; }
-    /* line 233, style.scss */
+    /* line 237, style.scss */
     #bios a.judges::after {
       content: ' ';
       border-bottom: 1px solid #7d7d7d;
       width: auto;
       display: block;
       margin-top: -2.4em; }
-    /* line 240, style.scss */
+    /* line 244, style.scss */
     #bios a.judges h2 {
       display: inline-block;
       text-align: center;
@@ -3169,7 +3173,7 @@ body.home header {
       color: #7d7d7d;
       background: white;
       padding: 0px 20px; }
-  /* line 249, style.scss */
+  /* line 253, style.scss */
   #bios img {
     max-width: 100%;
     height: auto;
@@ -3179,17 +3183,17 @@ body.home header {
     box-shadow: 0 0 6px black;
     transition: all .2s linear;
     -webkit-transition: all .2s ease; }
-  /* line 259, style.scss */
+  /* line 263, style.scss */
   #bios a:hover img {
     box-shadow: 0 0 16px #1e98d3;
     transform: rotate(16deg);
     -ms-transform: rotate(16deg);
     -webkit-transform: rotate(16deg); }
 
-/* line 269, style.scss */
+/* line 273, style.scss */
 #team {
   text-align: center; }
-  /* line 271, style.scss */
+  /* line 275, style.scss */
   #team .team-circle-img-bigger, #team .team-circle-img {
     border-radius: 500px;
     width: 180px;
@@ -3197,7 +3201,7 @@ body.home header {
     display: inline-block;
     background-size: cover; }
 
-/* line 282, style.scss */
+/* line 286, style.scss */
 .judge {
   background-color: gray;
   background-size: cover;
@@ -3205,25 +3209,25 @@ body.home header {
   color: white;
   text-shadow: 0 0 4px black;
   padding: 120px 0px; }
-  /* line 289, style.scss */
+  /* line 293, style.scss */
   .judge a {
     color: white;
     border-bottom: 1px dotted white; }
-  /* line 293, style.scss */
+  /* line 297, style.scss */
   .judge#alexis {
     background-image: url(http://rack.2.mshcdn.com/media/ZgkyMDEzLzEwLzIyLzA0L2FsZXhpc29oYW5pLjI3MzhiLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/8d0f9246/905/alexis-ohanian.jpg); }
-  /* line 296, style.scss */
+  /* line 300, style.scss */
   .judge#biggs {
     background-image: url(http://www.bigwidelogic.com/wp-content/uploads/2013/01/NetokracijaBalkanTour8WEB.jpg); }
-  /* line 299, style.scss */
+  /* line 303, style.scss */
   .judge#kroll {
     background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/10/article-2536973-1A8A306000000578-243_634x450.jpg); }
-  /* line 302, style.scss */
+  /* line 306, style.scss */
   .judge#griffel {
     background-image: url(http://d13pix9kaak6wt.cloudfront.net/background/mattangriffel_1345054788_91.jpg);
     background-position: bottom; }
 
-/* line 312, style.scss */
+/* line 316, style.scss */
 #schedule table {
   width: 100%;
   max-width: 700px;
@@ -3232,68 +3236,68 @@ body.home header {
   border-radius: 4px;
   overflow: hidden;
   background: white; }
-  /* line 320, style.scss */
+  /* line 324, style.scss */
   #schedule table td, #schedule table th {
     padding: 5px 6px; }
-  /* line 323, style.scss */
+  /* line 327, style.scss */
   #schedule table tr {
     border: 1px solid #D5D5D5; }
-    /* line 325, style.scss */
+    /* line 329, style.scss */
     #schedule table tr:hover {
       background: #f3fafd; }
-  /* line 329, style.scss */
+  /* line 333, style.scss */
   #schedule table th {
     background: #FAFAFA;
     background-image: linear-gradient(#fafafa, #eaeaea);
     box-shadow: 0 -2px 0 #DADADA inset;
     border-bottom: 1px solid #bbbbbb;
     font-weight: bold; }
-  /* line 336, style.scss */
+  /* line 340, style.scss */
   #schedule table tr > td:first-child {
     width: 20%; }
-  /* line 339, style.scss */
+  /* line 343, style.scss */
   #schedule table tr > td:nth-child(2) {
     width: 50%; }
-  /* line 342, style.scss */
+  /* line 346, style.scss */
   #schedule table tr > td:nth-child(3) {
     width: 30%; }
 
-/* line 349, style.scss */
+/* line 353, style.scss */
 #podium #gold, #podium #silver, #podium #bronze {
   color: white;
   text-align: center; }
-  /* line 352, style.scss */
+  /* line 356, style.scss */
   #podium #gold h2, #podium #silver h2, #podium #bronze h2 {
     font-weight: bold; }
-  /* line 355, style.scss */
+  /* line 359, style.scss */
   #podium #gold a, #podium #silver a, #podium #bronze a {
     color: white;
     padding: 10px;
     border-top: 1px dotted;
     display: block; }
-/* line 362, style.scss */
+/* line 366, style.scss */
 #podium #gold {
   background: #E0C40B; }
-  /* line 364, style.scss */
+  /* line 368, style.scss */
   #podium #gold h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 368, style.scss */
+/* line 372, style.scss */
 #podium #silver {
   background: #666; }
-  /* line 370, style.scss */
+  /* line 374, style.scss */
   #podium #silver h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 374, style.scss */
+/* line 378, style.scss */
 #podium #bronze {
   background: #8D5B33; }
-  /* line 376, style.scss */
+  /* line 380, style.scss */
   #podium #bronze h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
 
-/* line 383, style.scss */
+/* line 387, style.scss */
 #press .col-50 {
   padding: 10px !important; }
-/* line 386, style.scss */
+/* line 390, style.scss */
 #press .newspaper {
   background-color: #ffffe3;
   color: #000000;
@@ -3306,58 +3310,58 @@ body.home header {
   outline: solid rgba(0, 0, 0, 0.3) 1px;
   outline-offset: -1px;
   position: relative; }
-  /* line 399, style.scss */
+  /* line 403, style.scss */
   #press .newspaper.nj h3 {
     font-family: Arvo, Arial;
     font-weight: bold; }
-  /* line 404, style.scss */
+  /* line 408, style.scss */
   #press .newspaper.blank {
     opacity: 0.5;
     background: lightGray; }
-  /* line 408, style.scss */
+  /* line 412, style.scss */
   #press .newspaper img {
     width: 100%; }
-  /* line 411, style.scss */
+  /* line 415, style.scss */
   #press .newspaper span {
     color: gray;
     display: block;
     margin-top: -8px;
     margin-bottom: 2px; }
 
-/* line 421, style.scss */
+/* line 425, style.scss */
 #rules, #conduct {
   text-align: center; }
-  /* line 423, style.scss */
+  /* line 427, style.scss */
   #rules .container, #conduct .container {
     max-width: 700px; }
-  /* line 426, style.scss */
+  /* line 430, style.scss */
   #rules p, #conduct p {
     margin-bottom: 20px; }
 
-/* line 430, style.scss */
+/* line 434, style.scss */
 #rules {
   background: #2c3e50;
   color: #bdc3c7; }
 
-/* line 436, style.scss */
+/* line 440, style.scss */
 footer {
   background: #2c3e50;
   color: #bdc3c7;
   overflow: visible; }
-  /* line 440, style.scss */
+  /* line 444, style.scss */
   footer blockquote {
     border-left: 3px solid;
     padding: 10px 15px;
     line-height: 1.3em; }
-    /* line 445, style.scss */
+    /* line 449, style.scss */
     footer blockquote small {
       display: block;
       font-size: 80%; }
-      /* line 448, style.scss */
+      /* line 452, style.scss */
       footer blockquote small:before {
         content: '\2014 \00A0';
         padding-right: 2px; }
-  /* line 454, style.scss */
+  /* line 458, style.scss */
   footer a.fb-button {
     background: linear-gradient(#4c69ba, #3b55a0);
     border: none;
@@ -3374,7 +3378,7 @@ footer {
     vertical-align: bottom;
     font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
     padding: 0px 5px; }
-  /* line 471, style.scss */
+  /* line 475, style.scss */
   footer a.twitter-follow-button, footer a.github-btn {
     font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
     position: relative;
@@ -3392,36 +3396,67 @@ footer {
     height: 20px;
     max-width: 100%;
     padding: 0px 5px; }
-    /* line 488, style.scss */
+    /* line 492, style.scss */
     footer a.twitter-follow-button i, footer a.github-btn i {
       color: #55acee;
       text-shadow: 0 1px rgba(255, 255, 255, 0.5);
       -webkit-transform: scale(1.5);
       display: inline-block;
       margin: 5px 0px; }
-      /* line 494, style.scss */
+      /* line 498, style.scss */
       footer a.twitter-follow-button i.icon-github, footer a.github-btn i.icon-github {
         color: black; }
 
-/* line 501, style.scss */
+/* line 505, style.scss */
 .footnote {
   background: #3e5771;
   color: #bdc3c7; }
-  /* line 504, style.scss */
+  /* line 508, style.scss */
   .footnote a {
     color: white; }
 
 @media screen and (max-width: 767px) {
-  /* line 510, style.scss */
+  /* line 514, style.scss */
   header {
     padding: 40px 20px;
     font-weight: bold; }
-    /* line 513, style.scss */
+    /* line 517, style.scss */
     header .container {
       background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       padding-bottom: 10px; }
 
-  /* line 519, style.scss */
+  /* line 523, style.scss */
+  #info {
+    text-align: center; }
+    /* line 525, style.scss */
+    #info .col-25 i, #info .col-30 i {
+      position: relative;
+      margin-top: 20px;
+      display: block; }
+
+  /* line 532, style.scss */
+  #bios a {
+    display: block;
+    margin-bottom: 3em; }
+  /* line 536, style.scss */
+  #bios img {
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 0px; }
+
+  /* line 543, style.scss */
   footer, .footnote {
-    display: none; } }
+    display: none; }
+
+  /* line 546, style.scss */
+  .back2top {
+    display: block; }
+    /* line 548, style.scss */
+    .back2top a {
+      color: white;
+      display: block;
+      line-height: 3em;
+      text-align: center;
+      margin-bottom: -500px; } }
