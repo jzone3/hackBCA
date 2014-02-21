@@ -151,8 +151,13 @@ header {
   text-shadow: 0 0 4px black;
   background-size: auto;
   background-position: center;
+  .container {
+    z-index: 10;
+  }
   h1 {
     font-weight: bold;
+  }
+  span {
   }
   &:after {
     background: linear-gradient(rgba(0,0,0,.5) 0%, transparent 100%);
@@ -301,7 +306,45 @@ body.home header {
 
 }
 
-// PRIZES
+// Schedule
+#schedule {
+  // background: $dark;
+  table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    border: 2px solid #D5D5D5;
+    border-radius: 4px;
+    overflow: hidden;
+    background: white;
+    td, th {
+      padding: 5px 6px;
+    }
+    tr {
+      border: 1px solid #D5D5D5;
+      &:hover {
+        background: lighten($blue, 50%);
+      }
+    }
+    th {
+      background: #FAFAFA;
+      background-image: linear-gradient(#FAFAFA, #EAEAEA);
+      box-shadow: 0 -2px 0 #DADADA inset;
+      border-bottom: 1px solid darken(#DADADA, 12%);
+      font-weight: bold;
+    }
+    tr > td:first-child {
+        width: 20%;
+    }
+    tr > td:nth-child(2) {
+        width: 50%;
+    }
+    tr > td:nth-child(3) {
+        width: 30%;
+    }
+  }
+}
+// Prizes
 #podium {
   #gold, #silver, #bronze {
     color: white;
@@ -464,6 +507,15 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  header {
+    padding: 40px 20px;
+    font-weight: bold;
+    .container {
+      background: rgba(0,0,0,.5);
+      border-radius: 8px;
+      padding-bottom: 10px;
+    }
+  }
   footer, .footnote {
     display: none;
   }
