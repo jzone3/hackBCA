@@ -143,6 +143,7 @@ ul.details {
 
 a {
   display: inline-block;
+  -webkit-tap-highlight-color: rgba(30, 152, 211, 0.5);
   @extend .transition;
   &:active {
     -webkit-transform: scale(0.9);
@@ -180,7 +181,7 @@ header {
   background: $dark;
   background: linear-gradient(to bottom right,rgb(65, 119, 17),$dark);
   text-shadow: 0 0 10px gray;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   .container {
     z-index: 10;
@@ -542,6 +543,7 @@ header {
     @extend .button-jumbo;
   }
 }
+
 // RULES
 #rules, #conduct {
   text-align: center;
@@ -556,6 +558,8 @@ header {
   background: $dark;
   color: $silver;
 }
+
+// CHAT
 
 // Footer
 footer {
