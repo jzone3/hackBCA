@@ -3731,30 +3731,44 @@ footer {
   #info {
     text-align: center; }
     /* line 662, style.scss */
+    #info .col-25, #info .col-30 {
+      padding-left: 0px; }
+    /* line 665, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: relative;
       margin-top: 20px;
       display: block; }
 
-  /* line 669, style.scss */
+  /* line 672, style.scss */
   #bios a {
     display: block;
     margin-bottom: 3em; }
-  /* line 673, style.scss */
+  /* line 676, style.scss */
   #bios img {
     width: 100px;
     height: 100px;
     float: left;
     padding: 0px; }
+  /* line 682, style.scss */
+  #bios h4 {
+    padding-left: 120px; }
+  /* line 685, style.scss */
+  #bios p {
+    padding-left: 120px; }
 
-  /* line 680, style.scss */
+  /* line 689, style.scss */
+  #schedule table {
+    font-size: 70%;
+    line-height: 1.2em; }
+
+  /* line 693, style.scss */
   footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
     display: none !important; }
 
-  /* line 683, style.scss */
+  /* line 696, style.scss */
   .back2top {
     display: block; }
-    /* line 685, style.scss */
+    /* line 698, style.scss */
     .back2top a {
       color: white;
       display: block;

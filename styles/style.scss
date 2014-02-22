@@ -659,6 +659,9 @@ footer {
   }
   #info {
     text-align: center;
+    .col-25, .col-30 {
+      padding-left: 0px;
+    }
     .col-25 i, .col-30 i {
       position: relative;
       margin-top: 20px;
@@ -676,6 +679,16 @@ footer {
       float: left;
       padding: 0px;
     }
+    h4 {
+      padding-left: 120px;
+    }
+    p {
+      padding-left: 120px;
+    }
+  }
+  #schedule table {
+    font-size: 70%;
+    line-height: 1.2em;
   }
   footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
     display: none!important;
