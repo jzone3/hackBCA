@@ -135,13 +135,14 @@
   background: $color;
   color: white;
   border: 1px solid darken($color, 20%);
-  transition: background-color .15s;
+  transition: background-color .15s, scale .15s;
   box-shadow: 0 0 2px rgba(0,0,0,.5);
   &:hover {
     background-color: lighten($color, 8%);
   }
   &:active, &:focus {
     background-color: darken($color, 8%);
+    -webkit-transform: scale(0.9);
   }
 }
 

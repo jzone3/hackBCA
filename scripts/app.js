@@ -16,10 +16,3 @@ return(!i||i!==r&&!b.contains(r,i))&&(e.type=o.origType,n=o.handler.apply(this,a
       $('footer blockquote small').html( data.author );
     });
 })();
-
-// Menu
-$(document).on('click', '#toggle-nav', function () {
-    $( "body" ).toggleClass( "nav-push" );
-    $( "nav" ).toggleClass( "nav-open" );
-});
-

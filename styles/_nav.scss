@@ -65,6 +65,7 @@ nav {
 }
 
 // Mobile
+// -@ Codrops ;)
 @media screen and (max-width: 770px) {
 
     .bar.mobile-header, .bar.mobile-footer {
@@ -76,8 +77,8 @@ nav {
         position: fixed;
         width: 240px;
         height: 100%;
-        top: 0;
-        z-index: 1000;
+        top: 44px;
+        z-index: 400;
     }
 
     .nav .logo {
@@ -87,7 +88,9 @@ nav {
         // padding: 20px;
         // margin: 0;
         // font-weight: 300;
-        // background: #0d77b6;
+        // background: $dark;
+        // padding: 0 1em;
+        // line-height: 44px;
     }
 
     .nav a {
@@ -121,6 +124,8 @@ nav {
         overflow-x: hidden;
         position: relative;
         left: 0;
+        padding-top: 44px;
+        padding-bottom: 44px;
     }
 
     .nav-push {
@@ -172,5 +177,40 @@ nav {
     }
     .right, .left {
         padding: 0 8px;
+    }
+    &.mobile-header {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 44px;
+        z-index: 500;
+    }
+    &.mobile-footer {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 62px;
+        z-index: 500;
+        line-height: 1em;
+        text-align: center;
+        background: rgba(62, 87, 113, 0.9);
+        color: black;
+        menu {
+            a {
+                display: inline-block;
+                margin: 0px;
+                width: 22%;
+                padding-top: 6px;
+                i {
+                    font-size: 30px;
+                }
+                span {
+                    display: block;
+                    font-size: 12px;
+                }
+            }
+        }
     }
 }

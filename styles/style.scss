@@ -78,7 +78,7 @@ body {
   background: lighten($dark,10%);
 }
 
-input, div.div.gm-iw, div.gm-style-mtc, div.gm-style-cc {
+input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
   font-family: $proxima!important;
 }
 
@@ -303,13 +303,55 @@ header {
   .row {
     display: block;
     vertical-align: center;
+    img {
+      -webkit-filter: grayscale(1);
+      opacity: 0.8;
+      max-width: 80%;
+      @extend .transition;
+      &:hover {
+        -webkit-filter: grayscale(0);
+        opacity: 1;
+      }
+    }
     .col-25 {
       max-width: 75%;
+      text-align: center;
+      line-height: 150px;
+      vertical-align: top;
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        max-height: 150px;
+      }
     }
+  }
+  .button {
+    @include button-subtle($blue);
+    @extend .button-jumbo;
   }
 }
 
 // ABOUT
+#location {
+  input {
+    margin: 0.4em 0;
+  }
+  .btn-maps {
+    @include button-subtle($blue);
+  }
+  .btn-school {
+    @include button-subtle($green);
+  }
+  .btn-detect {
+    @include button-subtle($blue);
+  }
+  .btn-go {
+    @include button-subtle($green);
+  }
+  .btn-reset {
+    @include button-subtle($gray);
+  }
+}
 #team {
   text-align: center;
   .team-circle-img-bigger, .team-circle-img {
@@ -335,6 +377,12 @@ header {
     border-radius: 4px;
     text-align: center;
   }
+  .signup-btn, .hackathon-link {
+    @include button-subtle($green);
+    @extend .button-jumbo;
+    display: block;
+  }
+
 }
 #map-canvas {
   position: relative;
@@ -345,37 +393,37 @@ header {
   box-shadow: 0 0 2px gray;
 }
 
-// SCHEDULE
-
 // JUDGES
 .judge {
     background-color: gray;
     background-size: cover;
     background-position: center;
     color: white;
-    text-shadow: 0 0 4px black;
-    padding: 120px 0px;
+    text-shadow: 0 0 8px black;
+    padding: 300px 0px;
     a {
       color: white;
       border-bottom: 1px dotted white;
     }
-    &#alexis {
-      background-image: url(http://rack.2.mshcdn.com/media/ZgkyMDEzLzEwLzIyLzA0L2FsZXhpc29oYW5pLjI3MzhiLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/8d0f9246/905/alexis-ohanian.jpg);
+    &#ohanian {
+      background-image: url(/images/banners/ohanian.jpg);
     }
     &#biggs {
-      background-image: url(http://www.bigwidelogic.com/wp-content/uploads/2013/01/NetokracijaBalkanTour8WEB.jpg);
+      background-image: url(/images/banners/biggs.jpg);
     }
     &#kroll {
-      background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/10/article-2536973-1A8A306000000578-243_634x450.jpg);
+      background-image: url(/images/banners/kroll.jpg);
     }
     &#griffel {
-      background-image: url(http://d13pix9kaak6wt.cloudfront.net/background/mattangriffel_1345054788_91.jpg);
+      background-image: url(/images/banners/griffel.jpg);
       background-position: bottom;
+      color: black;
+      text-shadow: none;
     }
 
 }
 
-// Schedule
+// SCHEDULE
 #schedule {
   // background: $dark;
   table {
@@ -413,7 +461,8 @@ header {
     }
   }
 }
-// Prizes
+
+// PRIZES
 #podium {
   #gold, #silver, #bronze {
     color: white;
@@ -452,6 +501,7 @@ header {
   .col-50 {
     padding: 10px!important;
   }
+}
   .newspaper {
     background-color: #ffffe3;
     color: #000000;
@@ -484,9 +534,12 @@ header {
       margin-bottom: 2px;
     }
   }
-}
 #access {
   text-align: center;
+  .button {
+    @include button-subtle($blue);
+    @extend .button-jumbo;
+  }
 }
 // RULES
 #rules, #conduct {
@@ -523,9 +576,8 @@ footer {
     }
   }
   .facebook-btn {
-    iframe {
-      max-width: 400px!important;
-      max-height: 300px!important;
+    iframe[style="border: none; visibility: hidden;"] {
+      display: none!important;
     }
   }
   a.fb-button {
@@ -598,6 +650,11 @@ footer {
       padding-bottom: 10px;
     }
   }
+  .judge {
+    padding: 180px 0px;
+    text-align: center;
+    font-weight: bold;
+  }
   #info {
     text-align: center;
     .col-25 i, .col-30 i {
@@ -628,7 +685,6 @@ footer {
       display: block;
       line-height: 3em;
       text-align: center;
-      margin-bottom: -500px;
     }
   }
 }

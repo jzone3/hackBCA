@@ -2495,7 +2495,7 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   box-shadow: 0 0 12px black; }
 
 /* line 9, global/_buttons.scss */
-.button, .btn {
+.button, .btn, #sponsors .button, #location .btn-maps, #location .btn-school, #location .btn-detect, #location .btn-go, #location .btn-reset, #faq .signup-btn, #faq .hackathon-link, #access .button {
   color: inherit;
   padding: 6px 8px;
   font-size: 14px;
@@ -2507,30 +2507,30 @@ e(1.6) translateX(-20px);opacity:0}100%{transform:scale(1) translateX(0px);opaci
   cursor: pointer;
   background: none; }
 
-/* line 149, global/_buttons.scss */
+/* line 150, global/_buttons.scss */
 .button-block {
   display: block; }
 
-/* line 153, global/_buttons.scss */
+/* line 154, global/_buttons.scss */
 .button-rounded {
   border-radius: 6px; }
 
-/* line 157, global/_buttons.scss */
+/* line 158, global/_buttons.scss */
 .button-circle {
   border-radius: 300px; }
 
-/* line 161, global/_buttons.scss */
-.button-large, .button, .btn {
+/* line 162, global/_buttons.scss */
+.button-large, .button, .btn, #sponsors .button, #location .btn-maps, #location .btn-school, #location .btn-detect, #location .btn-go, #location .btn-reset, #faq .signup-btn, #faq .hackathon-link, #access .button {
   font-size: 18px;
   line-height: 1.2em; }
 
-/* line 166, global/_buttons.scss */
-.button-jumbo, .btn.btn-large {
+/* line 167, global/_buttons.scss */
+.button-jumbo, .btn.btn-large, #sponsors .btn, #sponsors .button, #sponsors #location .btn-maps, #location #sponsors .btn-maps, #sponsors #location .btn-school, #location #sponsors .btn-school, #sponsors #location .btn-detect, #location #sponsors .btn-detect, #sponsors #location .btn-go, #location #sponsors .btn-go, #sponsors #location .btn-reset, #location #sponsors .btn-reset, #faq .signup-btn, #faq .hackathon-link, #access .btn, #access #location .btn-maps, #location #access .btn-maps, #access #location .btn-school, #location #access .btn-school, #access #location .btn-detect, #location #access .btn-detect, #access #location .btn-go, #location #access .btn-go, #access #location .btn-reset, #location #access .btn-reset, #access .button {
   font-size: 24px;
   line-height: 2.6em;
   padding: 0 16px; }
 
-/* line 172, global/_buttons.scss */
+/* line 173, global/_buttons.scss */
 .button-jumbo-prefix {
   display: inline-block !important;
   line-height: inherit !important;
@@ -2881,24 +2881,24 @@ nav .logo b {
   nav > a {
     padding: 0px 6px; } }
 @media screen and (max-width: 770px) {
-  /* line 70, _nav.scss */
+  /* line 71, _nav.scss */
   .bar.mobile-header, .bar.mobile-footer {
     display: block; }
 
-  /* line 74, _nav.scss */
+  /* line 75, _nav.scss */
   .nav {
     background: #47a3da;
     position: fixed;
     width: 240px;
     height: 100%;
-    top: 0;
-    z-index: 1000; }
+    top: 44px;
+    z-index: 400; }
 
-  /* line 83, _nav.scss */
+  /* line 84, _nav.scss */
   .nav .logo {
     display: none; }
 
-  /* line 93, _nav.scss */
+  /* line 96, _nav.scss */
   .nav a {
     display: block;
     color: #fff;
@@ -2906,40 +2906,42 @@ nav .logo b {
     font-weight: 300;
     border-bottom: 1px solid #258ecd;
     padding: 0.7em 1em; }
-    /* line 101, _nav.scss */
+    /* line 104, _nav.scss */
     .nav a:hover {
       background: #258ecd; }
-    /* line 105, _nav.scss */
+    /* line 108, _nav.scss */
     .nav a:active {
       background: #afdefa;
       color: #47a3da; }
 
-  /* line 112, _nav.scss */
+  /* line 115, _nav.scss */
   .nav-left {
     left: -240px; }
 
-  /* line 116, _nav.scss */
+  /* line 119, _nav.scss */
   .nav-left.nav-open {
     left: 0px; }
 
-  /* line 120, _nav.scss */
+  /* line 123, _nav.scss */
   body {
     overflow-x: hidden;
     position: relative;
-    left: 0; }
+    left: 0;
+    padding-top: 44px;
+    padding-bottom: 44px; }
 
-  /* line 126, _nav.scss */
+  /* line 131, _nav.scss */
   .nav-push {
     left: 240px; }
 
-  /* line 132, _nav.scss */
+  /* line 137, _nav.scss */
   body,
   .nav,
   .nav-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
     transition: all 0.3s ease; } }
-/* line 141, _nav.scss */
+/* line 146, _nav.scss */
 .bar {
   user-select: none;
   -webkit-user-select: none;
@@ -2949,30 +2951,63 @@ nav .logo b {
   height: 44px;
   line-height: 44px;
   font-size: 1.1em; }
-  /* line 152, _nav.scss */
+  /* line 157, _nav.scss */
   .bar a {
     color: white; }
-  /* line 155, _nav.scss */
+  /* line 160, _nav.scss */
   .bar .logo {
     font-size: 30px; }
-  /* line 158, _nav.scss */
+  /* line 163, _nav.scss */
   .bar #toggle-nav {
     float: left;
     padding: 0 8px; }
-    /* line 161, _nav.scss */
+    /* line 166, _nav.scss */
     .bar #toggle-nav i {
       display: inline-block;
       font-size: 110%;
       vertical-align: text-bottom; }
-    /* line 166, _nav.scss */
+    /* line 171, _nav.scss */
     .bar #toggle-nav span {
       font-size: 0.6em;
       line-height: 1em;
       display: inline-block;
       margin-top: -3px; }
-  /* line 173, _nav.scss */
+  /* line 178, _nav.scss */
   .bar .right, .bar .left {
     padding: 0 8px; }
+  /* line 181, _nav.scss */
+  .bar.mobile-header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 44px;
+    z-index: 500; }
+  /* line 189, _nav.scss */
+  .bar.mobile-footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 62px;
+    z-index: 500;
+    line-height: 1em;
+    text-align: center;
+    background: rgba(62, 87, 113, 0.9);
+    color: black; }
+    /* line 201, _nav.scss */
+    .bar.mobile-footer menu a {
+      display: inline-block;
+      margin: 0px;
+      width: 22%;
+      padding-top: 6px; }
+      /* line 206, _nav.scss */
+      .bar.mobile-footer menu a i {
+        font-size: 30px; }
+      /* line 209, _nav.scss */
+      .bar.mobile-footer menu a span {
+        display: block;
+        font-size: 12px; }
 
 /* line 3, global/_tooltips.scss */
 attr {
@@ -3047,7 +3082,7 @@ body {
   background: #3e5771; }
 
 /* line 81, style.scss */
-input, div.div.gm-iw, div.gm-style-mtc, div.gm-style-cc {
+input, div.gm-iw div, div.gm-style-mtc div, div.gm-style-cc div {
   font-family: "Proxima Nova", "Proxima", Arial !important; }
 
 /* line 85, style.scss */
@@ -3074,12 +3109,12 @@ header, section, footer, .footnote {
   display: none; }
 
 /* line 107, style.scss */
-.transition, a, footer blockquote {
+.transition, a, #sponsors .row img, footer blockquote {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out; }
 
 /* line 112, style.scss */
-.button, .btn {
+.button, .btn, #sponsors .button, #location .btn-maps, #location .btn-school, #location .btn-detect, #location .btn-go, #location .btn-reset, #faq .signup-btn, #faq .hackathon-link, #access .button {
   border-radius: 6px;
   margin-right: 0.2em; }
 
@@ -3088,7 +3123,7 @@ header, section, footer, .footnote {
   background: #f39c12;
   color: white;
   border: 1px solid #976008;
-  transition: background-color .15s;
+  transition: background-color .15s, scale .15s;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
   outline: none; }
   /* line 140, global/_buttons.scss */
@@ -3096,7 +3131,8 @@ header, section, footer, .footnote {
     background-color: #f5ac39; }
   /* line 143, global/_buttons.scss */
   .btn:active, .btn:focus {
-    background-color: #d2850b; }
+    background-color: #d2850b;
+    -webkit-transform: scale(0.9); }
 
 /* line 126, style.scss */
 .dark-text-shadow {
@@ -3272,36 +3308,156 @@ header {
     display: block;
     vertical-align: center; }
     /* line 306, style.scss */
+    #sponsors .row img {
+      -webkit-filter: grayscale(1);
+      opacity: 0.8;
+      max-width: 80%; }
+      /* line 311, style.scss */
+      #sponsors .row img:hover {
+        -webkit-filter: grayscale(0);
+        opacity: 1; }
+    /* line 316, style.scss */
     #sponsors .row .col-25 {
-      max-width: 75%; }
+      max-width: 75%;
+      text-align: center;
+      line-height: 150px;
+      vertical-align: top; }
+      /* line 321, style.scss */
+      #sponsors .row .col-25 img {
+        display: inline-block;
+        vertical-align: middle;
+        max-height: 150px; }
+  /* line 328, style.scss */
+  #sponsors .btn, #sponsors .button, #sponsors #location .btn-maps, #location #sponsors .btn-maps, #sponsors #location .btn-school, #location #sponsors .btn-school, #sponsors #location .btn-detect, #location #sponsors .btn-detect, #sponsors #location .btn-go, #location #sponsors .btn-go, #sponsors #location .btn-reset, #location #sponsors .btn-reset, #sponsors #faq .signup-btn, #faq #sponsors .signup-btn, #sponsors #faq .hackathon-link, #faq #sponsors .hackathon-link {
+    background: #1e98d3;
+    color: white;
+    border: 1px solid #11587a;
+    transition: background-color .15s, scale .15s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    /* line 140, global/_buttons.scss */
+    #sponsors .btn:hover, #sponsors .button:hover, #sponsors #location .btn-maps:hover, #location #sponsors .btn-maps:hover, #sponsors #location .btn-school:hover, #location #sponsors .btn-school:hover, #sponsors #location .btn-detect:hover, #location #sponsors .btn-detect:hover, #sponsors #location .btn-go:hover, #location #sponsors .btn-go:hover, #sponsors #location .btn-reset:hover, #location #sponsors .btn-reset:hover, #sponsors #faq .signup-btn:hover, #faq #sponsors .signup-btn:hover, #sponsors #faq .hackathon-link:hover, #faq #sponsors .hackathon-link:hover {
+      background-color: #37abe3; }
+    /* line 143, global/_buttons.scss */
+    #sponsors .btn:active, #sponsors .button:active, #sponsors #location .btn-maps:active, #location #sponsors .btn-maps:active, #sponsors #location .btn-school:active, #location #sponsors .btn-school:active, #sponsors #location .btn-detect:active, #location #sponsors .btn-detect:active, #sponsors #location .btn-go:active, #location #sponsors .btn-go:active, #sponsors #location .btn-reset:active, #location #sponsors .btn-reset:active, #sponsors #faq .signup-btn:active, #faq #sponsors .signup-btn:active, #sponsors #faq .hackathon-link:active, #faq #sponsors .hackathon-link:active, #sponsors .btn:focus, #sponsors .button:focus, #sponsors #location .btn-maps:focus, #location #sponsors .btn-maps:focus, #sponsors #location .btn-school:focus, #location #sponsors .btn-school:focus, #sponsors #location .btn-detect:focus, #location #sponsors .btn-detect:focus, #sponsors #location .btn-go:focus, #location #sponsors .btn-go:focus, #sponsors #location .btn-reset:focus, #location #sponsors .btn-reset:focus, #sponsors #faq .signup-btn:focus, #faq #sponsors .signup-btn:focus, #sponsors #faq .hackathon-link:focus, #faq #sponsors .hackathon-link:focus {
+      background-color: #197eaf;
+      -webkit-transform: scale(0.9); }
 
-/* line 313, style.scss */
+/* line 336, style.scss */
+#location input {
+  margin: 0.4em 0; }
+/* line 339, style.scss */
+#location .btn-maps {
+  background: #1e98d3;
+  color: white;
+  border: 1px solid #11587a;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  /* line 140, global/_buttons.scss */
+  #location .btn-maps:hover {
+    background-color: #37abe3; }
+  /* line 143, global/_buttons.scss */
+  #location .btn-maps:active, #location .btn-maps:focus {
+    background-color: #197eaf;
+    -webkit-transform: scale(0.9); }
+/* line 342, style.scss */
+#location .btn-school {
+  background: #62bc4d;
+  color: white;
+  border: 1px solid #3b762d;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  /* line 140, global/_buttons.scss */
+  #location .btn-school:hover {
+    background-color: #7cc76b; }
+  /* line 143, global/_buttons.scss */
+  #location .btn-school:active, #location .btn-school:focus {
+    background-color: #51a33d;
+    -webkit-transform: scale(0.9); }
+/* line 345, style.scss */
+#location .btn-detect {
+  background: #1e98d3;
+  color: white;
+  border: 1px solid #11587a;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  /* line 140, global/_buttons.scss */
+  #location .btn-detect:hover {
+    background-color: #37abe3; }
+  /* line 143, global/_buttons.scss */
+  #location .btn-detect:active, #location .btn-detect:focus {
+    background-color: #197eaf;
+    -webkit-transform: scale(0.9); }
+/* line 348, style.scss */
+#location .btn-go {
+  background: #62bc4d;
+  color: white;
+  border: 1px solid #3b762d;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  /* line 140, global/_buttons.scss */
+  #location .btn-go:hover {
+    background-color: #7cc76b; }
+  /* line 143, global/_buttons.scss */
+  #location .btn-go:active, #location .btn-go:focus {
+    background-color: #51a33d;
+    -webkit-transform: scale(0.9); }
+/* line 351, style.scss */
+#location .btn-reset {
+  background: #bec2c3;
+  color: white;
+  border: 1px solid #899092;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  /* line 140, global/_buttons.scss */
+  #location .btn-reset:hover {
+    background-color: #d3d6d7; }
+  /* line 143, global/_buttons.scss */
+  #location .btn-reset:active, #location .btn-reset:focus {
+    background-color: #a9aeaf;
+    -webkit-transform: scale(0.9); }
+
+/* line 355, style.scss */
 #team {
   text-align: center; }
-  /* line 315, style.scss */
+  /* line 357, style.scss */
   #team .team-circle-img-bigger, #team .team-circle-img {
     border-radius: 500px;
     width: 180px;
     height: 180px;
     display: inline-block;
     background-size: cover; }
-  /* line 322, style.scss */
+  /* line 364, style.scss */
   #team div.col-25 {
     margin-bottom: 50px; }
 
-/* line 327, style.scss */
+/* line 369, style.scss */
 #faq p.answers {
   padding-bottom: 1em;
   border-bottom: 1px solid lightGray;
   margin-bottom: 1em; }
-/* line 332, style.scss */
+/* line 374, style.scss */
 #faq .notice {
   background-color: lightGray;
   padding: 12px;
   border-radius: 4px;
   text-align: center; }
+/* line 380, style.scss */
+#faq .signup-btn, #faq .hackathon-link {
+  background: #62bc4d;
+  color: white;
+  border: 1px solid #3b762d;
+  transition: background-color .15s, scale .15s;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  display: block; }
+  /* line 140, global/_buttons.scss */
+  #faq .signup-btn:hover, #faq .hackathon-link:hover {
+    background-color: #7cc76b; }
+  /* line 143, global/_buttons.scss */
+  #faq .signup-btn:active, #faq .signup-btn:focus, #faq .hackathon-link:active, #faq .hackathon-link:focus {
+    background-color: #51a33d;
+    -webkit-transform: scale(0.9); }
 
-/* line 339, style.scss */
+/* line 387, style.scss */
 #map-canvas {
   position: relative;
   background: #ee4144;
@@ -3310,33 +3466,35 @@ header {
   height: 300px;
   box-shadow: 0 0 2px gray; }
 
-/* line 351, style.scss */
+/* line 397, style.scss */
 .judge {
   background-color: gray;
   background-size: cover;
   background-position: center;
   color: white;
-  text-shadow: 0 0 4px black;
-  padding: 120px 0px; }
-  /* line 358, style.scss */
+  text-shadow: 0 0 8px black;
+  padding: 300px 0px; }
+  /* line 404, style.scss */
   .judge a {
     color: white;
     border-bottom: 1px dotted white; }
-  /* line 362, style.scss */
-  .judge#alexis {
-    background-image: url(http://rack.2.mshcdn.com/media/ZgkyMDEzLzEwLzIyLzA0L2FsZXhpc29oYW5pLjI3MzhiLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/8d0f9246/905/alexis-ohanian.jpg); }
-  /* line 365, style.scss */
+  /* line 408, style.scss */
+  .judge#ohanian {
+    background-image: url(/images/banners/ohanian.jpg); }
+  /* line 411, style.scss */
   .judge#biggs {
-    background-image: url(http://www.bigwidelogic.com/wp-content/uploads/2013/01/NetokracijaBalkanTour8WEB.jpg); }
-  /* line 368, style.scss */
+    background-image: url(/images/banners/biggs.jpg); }
+  /* line 414, style.scss */
   .judge#kroll {
-    background-image: url(http://i.dailymail.co.uk/i/pix/2014/01/10/article-2536973-1A8A306000000578-243_634x450.jpg); }
-  /* line 371, style.scss */
+    background-image: url(/images/banners/kroll.jpg); }
+  /* line 417, style.scss */
   .judge#griffel {
-    background-image: url(http://d13pix9kaak6wt.cloudfront.net/background/mattangriffel_1345054788_91.jpg);
-    background-position: bottom; }
+    background-image: url(/images/banners/griffel.jpg);
+    background-position: bottom;
+    color: black;
+    text-shadow: none; }
 
-/* line 381, style.scss */
+/* line 429, style.scss */
 #schedule table {
   width: 100%;
   max-width: 700px;
@@ -3345,69 +3503,70 @@ header {
   border-radius: 4px;
   overflow: hidden;
   background: white; }
-  /* line 389, style.scss */
+  /* line 437, style.scss */
   #schedule table td, #schedule table th {
     padding: 5px 6px; }
-  /* line 392, style.scss */
+  /* line 440, style.scss */
   #schedule table tr {
     border: 1px solid #D5D5D5; }
-    /* line 394, style.scss */
+    /* line 442, style.scss */
     #schedule table tr:hover {
       background: #f3fafd; }
-  /* line 398, style.scss */
+  /* line 446, style.scss */
   #schedule table th {
     background: #FAFAFA;
     background-image: linear-gradient(#fafafa, #eaeaea);
     box-shadow: 0 -2px 0 #DADADA inset;
     border-bottom: 1px solid #bbbbbb;
     font-weight: bold; }
-  /* line 405, style.scss */
+  /* line 453, style.scss */
   #schedule table tr > td:first-child {
     width: 20%; }
-  /* line 408, style.scss */
+  /* line 456, style.scss */
   #schedule table tr > td:nth-child(2) {
     width: 50%; }
-  /* line 411, style.scss */
+  /* line 459, style.scss */
   #schedule table tr > td:nth-child(3) {
     width: 30%; }
 
-/* line 418, style.scss */
+/* line 467, style.scss */
 #podium #gold, #podium #silver, #podium #bronze {
   color: white;
   text-align: center; }
-  /* line 421, style.scss */
+  /* line 470, style.scss */
   #podium #gold h2, #podium #silver h2, #podium #bronze h2 {
     font-weight: bold; }
-  /* line 424, style.scss */
+  /* line 473, style.scss */
   #podium #gold a, #podium #silver a, #podium #bronze a {
     color: white;
     padding: 10px;
     border-top: 1px dotted;
     display: block; }
-/* line 431, style.scss */
+/* line 480, style.scss */
 #podium #gold {
   background: #E0C40B; }
-  /* line 433, style.scss */
+  /* line 482, style.scss */
   #podium #gold h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 437, style.scss */
+/* line 486, style.scss */
 #podium #silver {
   background: #666; }
-  /* line 439, style.scss */
+  /* line 488, style.scss */
   #podium #silver h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 443, style.scss */
+/* line 492, style.scss */
 #podium #bronze {
   background: #8D5B33; }
-  /* line 445, style.scss */
+  /* line 494, style.scss */
   #podium #bronze h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
 
-/* line 452, style.scss */
+/* line 501, style.scss */
 #press .col-50 {
   padding: 10px !important; }
-/* line 455, style.scss */
-#press .newspaper {
+
+/* line 505, style.scss */
+.newspaper {
   background-color: #ffffe3;
   color: #000000;
   font-family: Georgia;
@@ -3419,66 +3578,79 @@ header {
   outline: solid rgba(0, 0, 0, 0.3) 1px;
   outline-offset: -1px;
   position: relative; }
-  /* line 468, style.scss */
-  #press .newspaper.nj h3 {
+  /* line 518, style.scss */
+  .newspaper.nj h3 {
     font-family: Arvo, Arial;
     font-weight: bold; }
-  /* line 473, style.scss */
-  #press .newspaper.blank {
+  /* line 523, style.scss */
+  .newspaper.blank {
     opacity: 0.5;
     background: lightGray; }
-  /* line 477, style.scss */
-  #press .newspaper img {
+  /* line 527, style.scss */
+  .newspaper img {
     width: 100%; }
-  /* line 480, style.scss */
-  #press .newspaper span {
+  /* line 530, style.scss */
+  .newspaper span {
     color: gray;
     display: block;
     margin-top: -8px;
     margin-bottom: 2px; }
 
-/* line 488, style.scss */
+/* line 537, style.scss */
 #access {
   text-align: center; }
+  /* line 539, style.scss */
+  #access .btn, #access #location .btn-maps, #location #access .btn-maps, #access #location .btn-school, #location #access .btn-school, #access #location .btn-detect, #location #access .btn-detect, #access #location .btn-go, #location #access .btn-go, #access #location .btn-reset, #location #access .btn-reset, #access #faq .signup-btn, #faq #access .signup-btn, #access #faq .hackathon-link, #faq #access .hackathon-link, #access .button {
+    background: #1e98d3;
+    color: white;
+    border: 1px solid #11587a;
+    transition: background-color .15s, scale .15s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+    /* line 140, global/_buttons.scss */
+    #access .btn:hover, #access #location .btn-maps:hover, #location #access .btn-maps:hover, #access #location .btn-school:hover, #location #access .btn-school:hover, #access #location .btn-detect:hover, #location #access .btn-detect:hover, #access #location .btn-go:hover, #location #access .btn-go:hover, #access #location .btn-reset:hover, #location #access .btn-reset:hover, #access #faq .signup-btn:hover, #faq #access .signup-btn:hover, #access #faq .hackathon-link:hover, #faq #access .hackathon-link:hover, #access .button:hover {
+      background-color: #37abe3; }
+    /* line 143, global/_buttons.scss */
+    #access .btn:active, #access #location .btn-maps:active, #location #access .btn-maps:active, #access #location .btn-school:active, #location #access .btn-school:active, #access #location .btn-detect:active, #location #access .btn-detect:active, #access #location .btn-go:active, #location #access .btn-go:active, #access #location .btn-reset:active, #location #access .btn-reset:active, #access #faq .signup-btn:active, #faq #access .signup-btn:active, #access #faq .hackathon-link:active, #faq #access .hackathon-link:active, #access .button:active, #access .btn:focus, #access #location .btn-maps:focus, #location #access .btn-maps:focus, #access #location .btn-school:focus, #location #access .btn-school:focus, #access #location .btn-detect:focus, #location #access .btn-detect:focus, #access #location .btn-go:focus, #location #access .btn-go:focus, #access #location .btn-reset:focus, #location #access .btn-reset:focus, #access #faq .signup-btn:focus, #faq #access .signup-btn:focus, #access #faq .hackathon-link:focus, #faq #access .hackathon-link:focus, #access .button:focus {
+      background-color: #197eaf;
+      -webkit-transform: scale(0.9); }
 
-/* line 492, style.scss */
+/* line 545, style.scss */
 #rules, #conduct {
   text-align: center; }
-  /* line 494, style.scss */
+  /* line 547, style.scss */
   #rules .container, #conduct .container {
     max-width: 700px; }
-  /* line 497, style.scss */
+  /* line 550, style.scss */
   #rules p, #conduct p {
     margin-bottom: 20px; }
 
-/* line 501, style.scss */
+/* line 554, style.scss */
 #rules {
   background: #2c3e50;
   color: #bdc3c7; }
 
-/* line 507, style.scss */
+/* line 560, style.scss */
 footer {
   background: #2c3e50;
   color: #bdc3c7;
   overflow: visible; }
-  /* line 511, style.scss */
+  /* line 564, style.scss */
   footer blockquote {
     border-left: 3px solid;
     padding: 10px 15px;
     line-height: 1.3em; }
-    /* line 516, style.scss */
+    /* line 569, style.scss */
     footer blockquote small {
       display: block;
       font-size: 80%; }
-      /* line 519, style.scss */
+      /* line 572, style.scss */
       footer blockquote small:before {
         content: '\2014 \00A0';
         padding-right: 2px; }
-  /* line 526, style.scss */
-  footer .facebook-btn iframe {
-    max-width: 400px !important;
-    max-height: 300px !important; }
-  /* line 531, style.scss */
+  /* line 579, style.scss */
+  footer .facebook-btn iframe[style="border: none; visibility: hidden;"] {
+    display: none !important; }
+  /* line 583, style.scss */
   footer a.fb-button {
     background: linear-gradient(#4c69ba, #3b55a0);
     border: none;
@@ -3495,7 +3667,7 @@ footer {
     vertical-align: bottom;
     font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
     padding: 0px 5px; }
-  /* line 548, style.scss */
+  /* line 600, style.scss */
   footer a.twitter-follow-button, footer a.github-btn {
     font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
     position: relative;
@@ -3513,71 +3685,76 @@ footer {
     height: 20px;
     max-width: 100%;
     padding: 0px 5px; }
-    /* line 565, style.scss */
+    /* line 617, style.scss */
     footer a.twitter-follow-button i, footer a.github-btn i {
       color: #55acee;
       text-shadow: 0 1px rgba(255, 255, 255, 0.5);
       -webkit-transform: scale(1.5);
       display: inline-block;
       margin: 5px 0px; }
-      /* line 571, style.scss */
+      /* line 623, style.scss */
       footer a.twitter-follow-button i.icon-github, footer a.github-btn i.icon-github {
         color: black; }
 
-/* line 578, style.scss */
+/* line 630, style.scss */
 .footnote {
   background: #3e5771;
   color: #bdc3c7; }
-  /* line 581, style.scss */
+  /* line 633, style.scss */
   .footnote a {
     color: white; }
 
 @media screen and (max-width: 767px) {
-  /* line 587, style.scss */
+  /* line 639, style.scss */
   .linearound h1, .linearound h2 {
     font-size: 50px; }
 
-  /* line 592, style.scss */
+  /* line 644, style.scss */
   header {
     padding: 40px 20px;
     font-weight: bold; }
-    /* line 595, style.scss */
+    /* line 647, style.scss */
     header .container {
       background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       padding-bottom: 10px; }
 
-  /* line 601, style.scss */
+  /* line 653, style.scss */
+  .judge {
+    padding: 180px 0px;
+    text-align: center;
+    font-weight: bold; }
+
+  /* line 658, style.scss */
   #info {
     text-align: center; }
-    /* line 603, style.scss */
+    /* line 660, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: relative;
       margin-top: 20px;
       display: block; }
 
-  /* line 610, style.scss */
+  /* line 667, style.scss */
   #bios a {
     display: block;
     margin-bottom: 3em; }
-  /* line 614, style.scss */
+  /* line 671, style.scss */
   #bios img {
     width: 100px;
     height: 100px;
     float: left;
     padding: 0px; }
 
-  /* line 621, style.scss */
+  /* line 678, style.scss */
   footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
     display: none !important; }
 
-  /* line 624, style.scss */
+  /* line 681, style.scss */
   .back2top {
     display: block; }
-    /* line 626, style.scss */
+    /* line 683, style.scss */
     .back2top a {
       color: white;
       display: block;
       line-height: 3em;
-      text-align: center;
-      margin-bottom: -500px; } }
+      text-align: center; } }
