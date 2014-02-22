@@ -3187,16 +3187,17 @@ header {
   padding: 160px 0px 120px;
   color: white;
   background: #2c3e50;
-  text-shadow: 0 0 4px black;
+  background: linear-gradient(to bottom right, #417711, #2c3e50);
+  text-shadow: 0 0 10px gray;
   background-size: auto;
   background-position: center; }
-  /* line 184, style.scss */
+  /* line 185, style.scss */
   header .container {
     z-index: 10; }
-  /* line 187, style.scss */
+  /* line 188, style.scss */
   header h1 {
     font-weight: bold; }
-  /* line 192, style.scss */
+  /* line 193, style.scss */
   header:after {
     background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     position: absolute;
@@ -3207,68 +3208,68 @@ header {
     left: 0;
     z-index: 0; }
 
-/* line 206, style.scss */
+/* line 207, style.scss */
 #intro {
   background: #2c3e50;
   color: white;
   padding-bottom: 0px; }
-  /* line 210, style.scss */
+  /* line 211, style.scss */
   #intro b {
     display: block;
     text-align: center;
     font-size: 120%;
     margin-bottom: .2em; }
-  /* line 216, style.scss */
+  /* line 217, style.scss */
   #intro blockquote {
     max-width: 500px;
     margin: auto;
     text-align: center; }
-  /* line 221, style.scss */
+  /* line 222, style.scss */
   #intro .container {
     border-bottom: 1px solid #bdc3c7;
     padding-bottom: 2.5em; }
 
-/* line 228, style.scss */
+/* line 229, style.scss */
 #info {
   background: #2c3e50;
   color: white; }
-  /* line 231, style.scss */
+  /* line 232, style.scss */
   #info .col-25, #info .col-30 {
     padding-left: 70px;
     position: relative; }
-    /* line 234, style.scss */
+    /* line 235, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: absolute;
       left: 0px;
       font-size: 50px;
       top: 6px; }
-      /* line 239, style.scss */
+      /* line 240, style.scss */
       #info .col-25 i.icon-event-21, #info .col-30 i.icon-event-21 {
         font-size: 60px !important; }
 
-/* line 247, style.scss */
+/* line 248, style.scss */
 #bios {
   text-align: center;
   padding-bottom: 4em; }
-  /* line 250, style.scss */
+  /* line 251, style.scss */
   #bios a {
     color: black; }
-    /* line 252, style.scss */
+    /* line 253, style.scss */
     #bios a:hover {
       color: #1e98d3; }
-  /* line 256, style.scss */
+  /* line 257, style.scss */
   #bios a.judges {
     display: block;
     width: 100%;
     position: relative; }
-    /* line 260, style.scss */
+    /* line 261, style.scss */
     #bios a.judges::after {
       content: ' ';
       border-bottom: 1px solid #7d7d7d;
       width: auto;
       display: block;
       margin-top: -2.4em; }
-    /* line 267, style.scss */
+    /* line 268, style.scss */
     #bios a.judges h2 {
       display: inline-block;
       text-align: center;
@@ -3276,7 +3277,7 @@ header {
       color: #7d7d7d;
       background: white;
       padding: 0px 20px; }
-  /* line 276, style.scss */
+  /* line 277, style.scss */
   #bios img {
     max-width: 100%;
     height: auto;
@@ -3286,48 +3287,48 @@ header {
     box-shadow: 0 0 6px black;
     transition: all .2s linear;
     -webkit-transition: all .2s ease; }
-  /* line 286, style.scss */
+  /* line 287, style.scss */
   #bios a:hover img {
     box-shadow: 0 0 16px #1e98d3;
     transform: rotate(16deg);
     -ms-transform: rotate(16deg);
     -webkit-transform: rotate(16deg); }
 
-/* line 294, style.scss */
+/* line 295, style.scss */
 #sponsors {
   text-align: center;
   background: #ECF0F1; }
-  /* line 297, style.scss */
+  /* line 298, style.scss */
   #sponsors h1 {
     background: #ECF0F1; }
-  /* line 300, style.scss */
+  /* line 301, style.scss */
   #sponsors img {
     max-width: 100%; }
-  /* line 303, style.scss */
+  /* line 304, style.scss */
   #sponsors .row {
     display: block;
     vertical-align: center; }
-    /* line 306, style.scss */
+    /* line 307, style.scss */
     #sponsors .row img {
       -webkit-filter: grayscale(1);
       opacity: 0.8;
       max-width: 80%; }
-      /* line 311, style.scss */
+      /* line 312, style.scss */
       #sponsors .row img:hover {
         -webkit-filter: grayscale(0);
         opacity: 1; }
-    /* line 316, style.scss */
+    /* line 317, style.scss */
     #sponsors .row .col-25 {
       max-width: 75%;
       text-align: center;
       line-height: 150px;
       vertical-align: top; }
-      /* line 321, style.scss */
+      /* line 322, style.scss */
       #sponsors .row .col-25 img {
         display: inline-block;
         vertical-align: middle;
         max-height: 150px; }
-  /* line 328, style.scss */
+  /* line 329, style.scss */
   #sponsors .btn, #sponsors .button, #sponsors #location .btn-maps, #location #sponsors .btn-maps, #sponsors #location .btn-school, #location #sponsors .btn-school, #sponsors #location .btn-detect, #location #sponsors .btn-detect, #sponsors #location .btn-go, #location #sponsors .btn-go, #sponsors #location .btn-reset, #location #sponsors .btn-reset, #sponsors #faq .signup-btn, #faq #sponsors .signup-btn, #sponsors #faq .hackathon-link, #faq #sponsors .hackathon-link {
     background: #1e98d3;
     color: white;
@@ -3342,10 +3343,10 @@ header {
       background-color: #197eaf;
       -webkit-transform: scale(0.9); }
 
-/* line 336, style.scss */
+/* line 337, style.scss */
 #location input {
   margin: 0.4em 0; }
-/* line 339, style.scss */
+/* line 340, style.scss */
 #location .btn-maps {
   background: #1e98d3;
   color: white;
@@ -3359,7 +3360,7 @@ header {
   #location .btn-maps:active, #location .btn-maps:focus {
     background-color: #197eaf;
     -webkit-transform: scale(0.9); }
-/* line 342, style.scss */
+/* line 343, style.scss */
 #location .btn-school {
   background: #62bc4d;
   color: white;
@@ -3373,7 +3374,7 @@ header {
   #location .btn-school:active, #location .btn-school:focus {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
-/* line 345, style.scss */
+/* line 346, style.scss */
 #location .btn-detect {
   background: #1e98d3;
   color: white;
@@ -3387,7 +3388,7 @@ header {
   #location .btn-detect:active, #location .btn-detect:focus {
     background-color: #197eaf;
     -webkit-transform: scale(0.9); }
-/* line 348, style.scss */
+/* line 349, style.scss */
 #location .btn-go {
   background: #62bc4d;
   color: white;
@@ -3401,7 +3402,7 @@ header {
   #location .btn-go:active, #location .btn-go:focus {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
-/* line 351, style.scss */
+/* line 352, style.scss */
 #location .btn-reset {
   background: #bec2c3;
   color: white;
@@ -3416,32 +3417,32 @@ header {
     background-color: #a9aeaf;
     -webkit-transform: scale(0.9); }
 
-/* line 355, style.scss */
+/* line 356, style.scss */
 #team {
   text-align: center; }
-  /* line 357, style.scss */
+  /* line 358, style.scss */
   #team .team-circle-img-bigger, #team .team-circle-img {
     border-radius: 500px;
     width: 180px;
     height: 180px;
     display: inline-block;
     background-size: cover; }
-  /* line 364, style.scss */
+  /* line 365, style.scss */
   #team div.col-25 {
     margin-bottom: 50px; }
 
-/* line 369, style.scss */
+/* line 370, style.scss */
 #faq p.answers {
   padding-bottom: 1em;
   border-bottom: 1px solid lightGray;
   margin-bottom: 1em; }
-/* line 374, style.scss */
+/* line 375, style.scss */
 #faq .notice {
   background-color: lightGray;
   padding: 12px;
   border-radius: 4px;
   text-align: center; }
-/* line 380, style.scss */
+/* line 381, style.scss */
 #faq .signup-btn, #faq .hackathon-link {
   background: #62bc4d;
   color: white;
@@ -3457,7 +3458,7 @@ header {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
 
-/* line 387, style.scss */
+/* line 388, style.scss */
 #map-canvas {
   position: relative;
   background: #ee4144;
@@ -3466,7 +3467,7 @@ header {
   height: 300px;
   box-shadow: 0 0 2px gray; }
 
-/* line 397, style.scss */
+/* line 398, style.scss */
 .judge {
   background-color: gray;
   background-size: cover;
@@ -3474,27 +3475,27 @@ header {
   color: white;
   text-shadow: 0 0 8px black;
   padding: 300px 0px; }
-  /* line 404, style.scss */
+  /* line 405, style.scss */
   .judge a {
     color: white;
     border-bottom: 1px dotted white; }
-  /* line 408, style.scss */
+  /* line 409, style.scss */
   .judge#ohanian {
     background-image: url(/images/banners/ohanian.jpg); }
-  /* line 411, style.scss */
+  /* line 412, style.scss */
   .judge#biggs {
     background-image: url(/images/banners/biggs.jpg); }
-  /* line 414, style.scss */
+  /* line 415, style.scss */
   .judge#kroll {
     background-image: url(/images/banners/kroll.jpg); }
-  /* line 417, style.scss */
+  /* line 418, style.scss */
   .judge#griffel {
     background-image: url(/images/banners/griffel.jpg);
     background-position: bottom;
     color: black;
     text-shadow: none; }
 
-/* line 429, style.scss */
+/* line 430, style.scss */
 #schedule table {
   width: 100%;
   max-width: 700px;
@@ -3503,69 +3504,69 @@ header {
   border-radius: 4px;
   overflow: hidden;
   background: white; }
-  /* line 437, style.scss */
+  /* line 438, style.scss */
   #schedule table td, #schedule table th {
     padding: 5px 6px; }
-  /* line 440, style.scss */
+  /* line 441, style.scss */
   #schedule table tr {
     border: 1px solid #D5D5D5; }
-    /* line 442, style.scss */
+    /* line 443, style.scss */
     #schedule table tr:hover {
       background: #f3fafd; }
-  /* line 446, style.scss */
+  /* line 447, style.scss */
   #schedule table th {
     background: #FAFAFA;
     background-image: linear-gradient(#fafafa, #eaeaea);
     box-shadow: 0 -2px 0 #DADADA inset;
     border-bottom: 1px solid #bbbbbb;
     font-weight: bold; }
-  /* line 453, style.scss */
+  /* line 454, style.scss */
   #schedule table tr > td:first-child {
     width: 20%; }
-  /* line 456, style.scss */
+  /* line 457, style.scss */
   #schedule table tr > td:nth-child(2) {
     width: 50%; }
-  /* line 459, style.scss */
+  /* line 460, style.scss */
   #schedule table tr > td:nth-child(3) {
     width: 30%; }
 
-/* line 467, style.scss */
+/* line 468, style.scss */
 #podium #gold, #podium #silver, #podium #bronze {
   color: white;
   text-align: center; }
-  /* line 470, style.scss */
+  /* line 471, style.scss */
   #podium #gold h2, #podium #silver h2, #podium #bronze h2 {
     font-weight: bold; }
-  /* line 473, style.scss */
+  /* line 474, style.scss */
   #podium #gold a, #podium #silver a, #podium #bronze a {
     color: white;
     padding: 10px;
     border-top: 1px dotted;
     display: block; }
-/* line 480, style.scss */
+/* line 481, style.scss */
 #podium #gold {
   background: #E0C40B; }
-  /* line 482, style.scss */
+  /* line 483, style.scss */
   #podium #gold h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 486, style.scss */
+/* line 487, style.scss */
 #podium #silver {
   background: #666; }
-  /* line 488, style.scss */
+  /* line 489, style.scss */
   #podium #silver h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 492, style.scss */
+/* line 493, style.scss */
 #podium #bronze {
   background: #8D5B33; }
-  /* line 494, style.scss */
+  /* line 495, style.scss */
   #podium #bronze h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
 
-/* line 501, style.scss */
+/* line 502, style.scss */
 #press .col-50 {
   padding: 10px !important; }
 
-/* line 505, style.scss */
+/* line 506, style.scss */
 .newspaper {
   background-color: #ffffe3;
   color: #000000;
@@ -3578,28 +3579,28 @@ header {
   outline: solid rgba(0, 0, 0, 0.3) 1px;
   outline-offset: -1px;
   position: relative; }
-  /* line 518, style.scss */
+  /* line 519, style.scss */
   .newspaper.nj h3 {
     font-family: Arvo, Arial;
     font-weight: bold; }
-  /* line 523, style.scss */
+  /* line 524, style.scss */
   .newspaper.blank {
     opacity: 0.5;
     background: lightGray; }
-  /* line 527, style.scss */
+  /* line 528, style.scss */
   .newspaper img {
     width: 100%; }
-  /* line 530, style.scss */
+  /* line 531, style.scss */
   .newspaper span {
     color: gray;
     display: block;
     margin-top: -8px;
     margin-bottom: 2px; }
 
-/* line 537, style.scss */
+/* line 538, style.scss */
 #access {
   text-align: center; }
-  /* line 539, style.scss */
+  /* line 540, style.scss */
   #access .btn, #access #location .btn-maps, #location #access .btn-maps, #access #location .btn-school, #location #access .btn-school, #access #location .btn-detect, #location #access .btn-detect, #access #location .btn-go, #location #access .btn-go, #access #location .btn-reset, #location #access .btn-reset, #access #faq .signup-btn, #faq #access .signup-btn, #access #faq .hackathon-link, #faq #access .hackathon-link, #access .button {
     background: #1e98d3;
     color: white;
@@ -3614,43 +3615,44 @@ header {
       background-color: #197eaf;
       -webkit-transform: scale(0.9); }
 
-/* line 545, style.scss */
+/* line 546, style.scss */
 #rules, #conduct {
   text-align: center; }
-  /* line 547, style.scss */
+  /* line 548, style.scss */
   #rules .container, #conduct .container {
     max-width: 700px; }
-  /* line 550, style.scss */
+  /* line 551, style.scss */
   #rules p, #conduct p {
     margin-bottom: 20px; }
 
-/* line 554, style.scss */
+/* line 555, style.scss */
 #rules {
   background: #2c3e50;
   color: #bdc3c7; }
 
-/* line 560, style.scss */
+/* line 561, style.scss */
 footer {
   background: #2c3e50;
   color: #bdc3c7;
   overflow: visible; }
-  /* line 564, style.scss */
+  /* line 565, style.scss */
   footer blockquote {
     border-left: 3px solid;
     padding: 10px 15px;
     line-height: 1.3em; }
-    /* line 569, style.scss */
+    /* line 570, style.scss */
     footer blockquote small {
       display: block;
       font-size: 80%; }
-      /* line 572, style.scss */
+      /* line 573, style.scss */
       footer blockquote small:before {
         content: '\2014 \00A0';
         padding-right: 2px; }
-  /* line 579, style.scss */
-  footer .facebook-btn iframe[style="border: none; visibility: hidden;"] {
-    display: none !important; }
-  /* line 583, style.scss */
+  /* line 580, style.scss */
+  footer .facebook-btn iframe {
+    max-width: 300px !important;
+    max-height: 50px !important; }
+  /* line 585, style.scss */
   footer a.fb-button {
     background: linear-gradient(#4c69ba, #3b55a0);
     border: none;
@@ -3667,7 +3669,7 @@ footer {
     vertical-align: bottom;
     font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
     padding: 0px 5px; }
-  /* line 600, style.scss */
+  /* line 602, style.scss */
   footer a.twitter-follow-button, footer a.github-btn {
     font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
     position: relative;
@@ -3685,74 +3687,74 @@ footer {
     height: 20px;
     max-width: 100%;
     padding: 0px 5px; }
-    /* line 617, style.scss */
+    /* line 619, style.scss */
     footer a.twitter-follow-button i, footer a.github-btn i {
       color: #55acee;
       text-shadow: 0 1px rgba(255, 255, 255, 0.5);
       -webkit-transform: scale(1.5);
       display: inline-block;
       margin: 5px 0px; }
-      /* line 623, style.scss */
+      /* line 625, style.scss */
       footer a.twitter-follow-button i.icon-github, footer a.github-btn i.icon-github {
         color: black; }
 
-/* line 630, style.scss */
+/* line 632, style.scss */
 .footnote {
   background: #3e5771;
   color: #bdc3c7; }
-  /* line 633, style.scss */
+  /* line 635, style.scss */
   .footnote a {
     color: white; }
 
 @media screen and (max-width: 767px) {
-  /* line 639, style.scss */
+  /* line 641, style.scss */
   .linearound h1, .linearound h2 {
     font-size: 50px; }
 
-  /* line 644, style.scss */
+  /* line 646, style.scss */
   header {
     padding: 40px 20px;
     font-weight: bold; }
-    /* line 647, style.scss */
+    /* line 649, style.scss */
     header .container {
       background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       padding-bottom: 10px; }
 
-  /* line 653, style.scss */
+  /* line 655, style.scss */
   .judge {
     padding: 180px 0px;
     text-align: center;
     font-weight: bold; }
 
-  /* line 658, style.scss */
+  /* line 660, style.scss */
   #info {
     text-align: center; }
-    /* line 660, style.scss */
+    /* line 662, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: relative;
       margin-top: 20px;
       display: block; }
 
-  /* line 667, style.scss */
+  /* line 669, style.scss */
   #bios a {
     display: block;
     margin-bottom: 3em; }
-  /* line 671, style.scss */
+  /* line 673, style.scss */
   #bios img {
     width: 100px;
     height: 100px;
     float: left;
     padding: 0px; }
 
-  /* line 678, style.scss */
+  /* line 680, style.scss */
   footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
     display: none !important; }
 
-  /* line 681, style.scss */
+  /* line 683, style.scss */
   .back2top {
     display: block; }
-    /* line 683, style.scss */
+    /* line 685, style.scss */
     .back2top a {
       color: white;
       display: block;

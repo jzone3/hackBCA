@@ -1,9 +1,43 @@
 CACHE MANIFEST
-# rev 1
+# rev 3
+
 NETWORK:
-/register
+*
+
 CACHE:
-/scripts/pixastic.custom.js
+styles/*
+styles/style.css
+styles/editme.css
+scripts/*
+scripts/app.js
+vectors/*
+press/*
+fonts/*
+fonts/proxima-nova/*
+icons/*
+icons/fonts/*
+images/*
+images/banners/*
+images/banners/ohanian.jpg
+images/banners/biggs.jpg
+images/banners/kroll.jpg
+images/banners/griffel.jpg
+images/faces/*
+images/judges/*
+images/logos/*
+images/sponsors/*
+/
+index/
+judges/
+offline/
+press/
+prizes/
+rules/
+schedule/
+
 # /styles/style.css
 # /styles/editme.css
 # /index.html
+
+FALLBACK:
+/ /offline

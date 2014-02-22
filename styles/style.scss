@@ -178,7 +178,8 @@ header {
   padding: 160px 0px 120px;
   color: white;
   background: $dark;
-  text-shadow: 0 0 4px black;
+  background: linear-gradient(to bottom right,rgb(65, 119, 17),$dark);
+  text-shadow: 0 0 10px gray;
   background-size: auto;
   background-position: center;
   .container {
@@ -576,8 +577,9 @@ footer {
     }
   }
   .facebook-btn {
-    iframe[style="border: none; visibility: hidden;"] {
-      display: none!important;
+    iframe {
+      max-width: 300px!important;
+      max-height: 50px!important;
     }
   }
   a.fb-button {
