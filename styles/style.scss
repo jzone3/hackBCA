@@ -180,12 +180,12 @@ a {
 // Header
 header {
   text-align: center;
-  // padding: 140px 0px 80px;
-  padding: 160px 0px 120px;
+  padding: 110px 0px 65px;
+  // padding: 160px 0px 120px;
   color: white;
   background: $dark;
   background: linear-gradient(to bottom right,rgb(65, 119, 17),$dark);
-  text-shadow: 0 0 10px gray;
+  text-shadow: 0 0 1px black;
   background-size: cover;
   background-position: center;
   .container {
@@ -713,7 +713,7 @@ footer {
     font-weight: bold;
     min-height: 100px!important;
     .container {
-      background: rgba(0,0,0,.5);
+      // background: rgba(0,0,0,.5);
       border-radius: 8px;
       padding-bottom: 10px;
     }

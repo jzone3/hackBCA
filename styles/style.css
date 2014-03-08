@@ -3200,11 +3200,11 @@ a {
 /* line 181, style.scss */
 header {
   text-align: center;
-  padding: 160px 0px 120px;
+  padding: 110px 0px 65px;
   color: white;
   background: #2c3e50;
   background: linear-gradient(to bottom right, #417711, #2c3e50);
-  text-shadow: 0 0 10px gray;
+  text-shadow: 0 0 1px black;
   background-size: cover;
   background-position: center; }
   /* line 191, style.scss */
@@ -3789,7 +3789,6 @@ footer {
     min-height: 100px !important; }
     /* line 715, style.scss */
     header .container {
-      background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       padding-bottom: 10px; }
     /* line 720, style.scss */
