@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'hackbca';
-	src:url('fonts/hackbca.eot?-sqx5sb');
-	src:url('fonts/hackbca.eot?#iefix-sqx5sb') format('embedded-opentype'),
-		url('fonts/hackbca.woff?-sqx5sb') format('woff'),
-		url('fonts/hackbca.ttf?-sqx5sb') format('truetype'),
-		url('fonts/hackbca.svg?-sqx5sb#hackbca') format('svg');
+	src:url('fonts/hackbca.eot?gnl8uw');
+	src:url('fonts/hackbca.eot?#iefixgnl8uw') format('embedded-opentype'),
+		url('fonts/hackbca.woff?gnl8uw') format('woff'),
+		url('fonts/hackbca.ttf?gnl8uw') format('truetype'),
+		url('fonts/hackbca.svg?gnl8uw#hackbca') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -202,6 +202,9 @@
 }
 .icon-event-21:before {
 	content: "\e647";
+}
+.icon-event-22:before {
+	content: "\e655";
 }
 .icon-warning:before {
 	content: "\21";
