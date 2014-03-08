@@ -150,6 +150,11 @@ a {
   }
 }
 
+.row:before, .row:after {
+  clear: both;
+  content: ' ';
+}
+
 .linearound {
   display: block;
   width: 100%;
@@ -348,6 +353,16 @@ header {
     @include button-subtle($blue);
     @extend .button-jumbo;
   }
+  #cohosts {
+    img {
+      &.intel {
+        height: 218px;
+      }
+      vertical-align: middle;
+      max-height:304px;
+      max-width:90%;
+    }
+  }
 }
 
 // ABOUT
@@ -534,6 +549,16 @@ header {
     }
   }
 }
+#prizes {
+  text-align: center;
+  .row {
+    border-bottom: 1px solid lightGray;
+    .col-33 {
+       padding: 0.5em 0;
+    }
+  }
+}
+
 // PRESS
 #press {
   .col-50 {
