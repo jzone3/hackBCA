@@ -3119,7 +3119,7 @@ header, section, footer, .footnote {
   display: none; }
 
 /* line 107, style.scss */
-.transition, a, #sponsors .row img, footer blockquote {
+.transition, a, header#video .container, #sponsors .row img, footer blockquote {
   transition: all .2s ease-in-out;
   -webkit-transition: all .2s ease-in-out; }
 
@@ -3209,11 +3209,12 @@ header {
   background-position: center; }
   /* line 191, style.scss */
   header .container {
-    z-index: 10; }
-  /* line 194, style.scss */
+    z-index: 10;
+    position: relative; }
+  /* line 195, style.scss */
   header h1 {
     font-weight: bold; }
-  /* line 199, style.scss */
+  /* line 200, style.scss */
   header:after {
     background: linear-gradient(rgba(0, 0, 0, 0.5) 0%, transparent 100%);
     position: absolute;
@@ -3223,11 +3224,20 @@ header {
     top: 0;
     left: 0;
     z-index: 0; }
+  /* line 210, style.scss */
+  header#video {
+    text-shadow: 0 0 4px black; }
+    /* line 212, style.scss */
+    header#video .container {
+      opacity: 1; }
+    /* line 217, style.scss */
+    header#video:hover .container {
+      opacity: 0; }
 
-/* line 211, style.scss */
+/* line 224, style.scss */
 #video {
   min-height: 800px; }
-  /* line 213, style.scss */
+  /* line 226, style.scss */
   #video iframe {
     position: absolute;
     top: 0;
@@ -3235,68 +3245,68 @@ header {
     width: 100%;
     height: 100%; }
 
-/* line 224, style.scss */
+/* line 237, style.scss */
 #intro {
   background: #2c3e50;
   color: white;
   padding-bottom: 0px; }
-  /* line 228, style.scss */
+  /* line 241, style.scss */
   #intro b {
     display: block;
     text-align: center;
     font-size: 120%;
     margin-bottom: .2em; }
-  /* line 234, style.scss */
+  /* line 247, style.scss */
   #intro blockquote {
     max-width: 500px;
     margin: auto;
     text-align: center; }
-  /* line 239, style.scss */
+  /* line 252, style.scss */
   #intro .container {
     border-bottom: 1px solid #bdc3c7;
     padding-bottom: 2.5em; }
 
-/* line 246, style.scss */
+/* line 259, style.scss */
 #info {
   background: #2c3e50;
   color: white; }
-  /* line 249, style.scss */
+  /* line 262, style.scss */
   #info .col-25, #info .col-30 {
     padding-left: 70px;
     position: relative; }
-    /* line 252, style.scss */
+    /* line 265, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: absolute;
       left: 0px;
       font-size: 50px;
       top: 6px; }
-      /* line 257, style.scss */
+      /* line 270, style.scss */
       #info .col-25 i.icon-event-21, #info .col-30 i.icon-event-21 {
         font-size: 60px !important; }
 
-/* line 265, style.scss */
+/* line 278, style.scss */
 #bios {
   text-align: center;
   padding-bottom: 4em; }
-  /* line 268, style.scss */
+  /* line 281, style.scss */
   #bios a {
     color: black; }
-    /* line 270, style.scss */
+    /* line 283, style.scss */
     #bios a:hover {
       color: #1e98d3; }
-  /* line 274, style.scss */
+  /* line 287, style.scss */
   #bios a.judges {
     display: block;
     width: 100%;
     position: relative; }
-    /* line 278, style.scss */
+    /* line 291, style.scss */
     #bios a.judges::after {
       content: ' ';
       border-bottom: 1px solid #7d7d7d;
       width: auto;
       display: block;
       margin-top: -2.4em; }
-    /* line 285, style.scss */
+    /* line 298, style.scss */
     #bios a.judges h2 {
       display: inline-block;
       text-align: center;
@@ -3304,7 +3314,7 @@ header {
       color: #7d7d7d;
       background: white;
       padding: 0px 20px; }
-  /* line 294, style.scss */
+  /* line 307, style.scss */
   #bios img {
     width: 100%;
     height: auto;
@@ -3314,54 +3324,54 @@ header {
     box-shadow: 0 0 6px black;
     transition: all .2s linear;
     -webkit-transition: all .2s ease; }
-  /* line 304, style.scss */
+  /* line 317, style.scss */
   #bios a:hover img {
     box-shadow: 0 0 16px #1e98d3;
     transform: rotate(16deg);
     -ms-transform: rotate(16deg);
     -webkit-transform: rotate(16deg); }
-  /* line 311, style.scss */
+  /* line 324, style.scss */
   #bios .col-30, #bios .col-25, #bios .col-33, #bios .col-20 {
     padding: 30px; }
-  /* line 314, style.scss */
+  /* line 327, style.scss */
   #bios h4 {
     font-weight: bold; }
 
-/* line 318, style.scss */
+/* line 331, style.scss */
 #sponsors {
   text-align: center;
   background: #ECF0F1; }
-  /* line 321, style.scss */
+  /* line 334, style.scss */
   #sponsors h1 {
     background: #ECF0F1; }
-  /* line 324, style.scss */
+  /* line 337, style.scss */
   #sponsors img {
     max-width: 100%; }
-  /* line 327, style.scss */
+  /* line 340, style.scss */
   #sponsors .row {
     display: block;
     vertical-align: center; }
-    /* line 330, style.scss */
+    /* line 343, style.scss */
     #sponsors .row img {
       -webkit-filter: grayscale(1);
       opacity: 0.8;
       max-width: 80%; }
-      /* line 335, style.scss */
+      /* line 348, style.scss */
       #sponsors .row img:hover {
         -webkit-filter: grayscale(0);
         opacity: 1; }
-    /* line 340, style.scss */
+    /* line 353, style.scss */
     #sponsors .row .col-25 {
       max-width: 75%;
       text-align: center;
       line-height: 150px;
       vertical-align: top; }
-      /* line 345, style.scss */
+      /* line 358, style.scss */
       #sponsors .row .col-25 img {
         display: inline-block;
         vertical-align: middle;
         max-height: 150px; }
-  /* line 352, style.scss */
+  /* line 365, style.scss */
   #sponsors .btn, #sponsors .button, #sponsors #location .btn-maps, #location #sponsors .btn-maps, #sponsors #location .btn-school, #location #sponsors .btn-school, #sponsors #location .btn-detect, #location #sponsors .btn-detect, #sponsors #location .btn-go, #location #sponsors .btn-go, #sponsors #location .btn-reset, #location #sponsors .btn-reset, #sponsors #faq .signup-btn, #faq #sponsors .signup-btn, #sponsors #faq .hackathon-link, #faq #sponsors .hackathon-link {
     background: #1e98d3;
     color: white;
@@ -3375,19 +3385,19 @@ header {
     #sponsors .btn:active, #sponsors .button:active, #sponsors #location .btn-maps:active, #location #sponsors .btn-maps:active, #sponsors #location .btn-school:active, #location #sponsors .btn-school:active, #sponsors #location .btn-detect:active, #location #sponsors .btn-detect:active, #sponsors #location .btn-go:active, #location #sponsors .btn-go:active, #sponsors #location .btn-reset:active, #location #sponsors .btn-reset:active, #sponsors #faq .signup-btn:active, #faq #sponsors .signup-btn:active, #sponsors #faq .hackathon-link:active, #faq #sponsors .hackathon-link:active, #sponsors .btn:focus, #sponsors .button:focus, #sponsors #location .btn-maps:focus, #location #sponsors .btn-maps:focus, #sponsors #location .btn-school:focus, #location #sponsors .btn-school:focus, #sponsors #location .btn-detect:focus, #location #sponsors .btn-detect:focus, #sponsors #location .btn-go:focus, #location #sponsors .btn-go:focus, #sponsors #location .btn-reset:focus, #location #sponsors .btn-reset:focus, #sponsors #faq .signup-btn:focus, #faq #sponsors .signup-btn:focus, #sponsors #faq .hackathon-link:focus, #faq #sponsors .hackathon-link:focus {
       background-color: #197eaf;
       -webkit-transform: scale(0.9); }
-  /* line 357, style.scss */
+  /* line 370, style.scss */
   #sponsors #cohosts img {
     vertical-align: middle;
     max-height: 304px;
     max-width: 90%; }
-    /* line 358, style.scss */
+    /* line 371, style.scss */
     #sponsors #cohosts img.intel {
       height: 218px; }
 
-/* line 370, style.scss */
+/* line 383, style.scss */
 #location input {
   margin: 0.4em 0; }
-/* line 373, style.scss */
+/* line 386, style.scss */
 #location .btn-maps {
   background: #1e98d3;
   color: white;
@@ -3401,7 +3411,7 @@ header {
   #location .btn-maps:active, #location .btn-maps:focus {
     background-color: #197eaf;
     -webkit-transform: scale(0.9); }
-/* line 376, style.scss */
+/* line 389, style.scss */
 #location .btn-school {
   background: #62bc4d;
   color: white;
@@ -3415,7 +3425,7 @@ header {
   #location .btn-school:active, #location .btn-school:focus {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
-/* line 379, style.scss */
+/* line 392, style.scss */
 #location .btn-detect {
   background: #1e98d3;
   color: white;
@@ -3429,7 +3439,7 @@ header {
   #location .btn-detect:active, #location .btn-detect:focus {
     background-color: #197eaf;
     -webkit-transform: scale(0.9); }
-/* line 382, style.scss */
+/* line 395, style.scss */
 #location .btn-go {
   background: #62bc4d;
   color: white;
@@ -3443,7 +3453,7 @@ header {
   #location .btn-go:active, #location .btn-go:focus {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
-/* line 385, style.scss */
+/* line 398, style.scss */
 #location .btn-reset {
   background: #bec2c3;
   color: white;
@@ -3458,32 +3468,32 @@ header {
     background-color: #a9aeaf;
     -webkit-transform: scale(0.9); }
 
-/* line 389, style.scss */
+/* line 402, style.scss */
 #team {
   text-align: center; }
-  /* line 391, style.scss */
+  /* line 404, style.scss */
   #team .team-circle-img-bigger, #team .team-circle-img {
     border-radius: 500px;
     width: 180px;
     height: 180px;
     display: inline-block;
     background-size: cover; }
-  /* line 398, style.scss */
+  /* line 411, style.scss */
   #team div.col-25 {
     margin-bottom: 50px; }
 
-/* line 403, style.scss */
+/* line 416, style.scss */
 #faq p.answers {
   padding-bottom: 1em;
   border-bottom: 1px solid lightGray;
   margin-bottom: 1em; }
-/* line 408, style.scss */
+/* line 421, style.scss */
 #faq .notice {
   background-color: lightGray;
   padding: 12px;
   border-radius: 4px;
   text-align: center; }
-/* line 414, style.scss */
+/* line 427, style.scss */
 #faq .signup-btn, #faq .hackathon-link {
   background: #62bc4d;
   color: white;
@@ -3499,7 +3509,7 @@ header {
     background-color: #51a33d;
     -webkit-transform: scale(0.9); }
 
-/* line 421, style.scss */
+/* line 434, style.scss */
 #map-canvas {
   position: relative;
   background: #ee4144;
@@ -3508,7 +3518,7 @@ header {
   height: 300px;
   box-shadow: 0 0 2px gray; }
 
-/* line 431, style.scss */
+/* line 444, style.scss */
 .judge {
   background-color: gray;
   background-size: cover;
@@ -3516,47 +3526,47 @@ header {
   color: white;
   text-shadow: 0 0 8px black;
   padding: 300px 0px; }
-  /* line 438, style.scss */
+  /* line 451, style.scss */
   .judge a {
     color: white;
     border-bottom: 1px dotted white; }
-  /* line 442, style.scss */
+  /* line 455, style.scss */
   .judge#ohanian {
     background-image: url(/images/banners/ohanian.jpg); }
-  /* line 445, style.scss */
+  /* line 458, style.scss */
   .judge#biggs {
     background-image: url(/images/banners/biggs.jpg); }
-  /* line 448, style.scss */
+  /* line 461, style.scss */
   .judge#kroll {
     background-image: url(/images/banners/kroll.jpg); }
-  /* line 451, style.scss */
+  /* line 464, style.scss */
   .judge#griffel {
     background-image: url(/images/banners/griffel.jpg);
     background-position: bottom;
     color: black;
     text-shadow: 0 0 8px white; }
-    /* line 456, style.scss */
+    /* line 469, style.scss */
     .judge#griffel a {
       border-bottom-color: black;
       color: black; }
-  /* line 461, style.scss */
+  /* line 474, style.scss */
   .judge#garcia {
     background-image: url(/images/banners/garcia.jpg); }
-  /* line 464, style.scss */
+  /* line 477, style.scss */
   .judge#chipps {
     background-image: url(/images/banners/chipps.jpg);
     background-position: bottom right;
     color: black;
     text-shadow: 0 0 8px white; }
-    /* line 469, style.scss */
+    /* line 482, style.scss */
     .judge#chipps a {
       border-bottom-color: black;
       color: black; }
-  /* line 474, style.scss */
+  /* line 487, style.scss */
   .judge h2 {
     font-weight: bold; }
 
-/* line 482, style.scss */
+/* line 495, style.scss */
 #schedule table {
   width: 100%;
   max-width: 700px;
@@ -3565,79 +3575,79 @@ header {
   border-radius: 4px;
   overflow: hidden;
   background: white; }
-  /* line 490, style.scss */
+  /* line 503, style.scss */
   #schedule table td, #schedule table th {
     padding: 5px 6px; }
-  /* line 493, style.scss */
+  /* line 506, style.scss */
   #schedule table tr {
     border: 1px solid #D5D5D5; }
-    /* line 495, style.scss */
+    /* line 508, style.scss */
     #schedule table tr:hover {
       background: #f3fafd; }
-  /* line 499, style.scss */
+  /* line 512, style.scss */
   #schedule table th {
     background: #FAFAFA;
     background-image: linear-gradient(#fafafa, #eaeaea);
     box-shadow: 0 -2px 0 #DADADA inset;
     border-bottom: 1px solid #bbbbbb;
     font-weight: bold; }
-  /* line 506, style.scss */
+  /* line 519, style.scss */
   #schedule table tr > td:first-child {
     width: 20%; }
-  /* line 509, style.scss */
+  /* line 522, style.scss */
   #schedule table tr > td:nth-child(2) {
     width: 50%; }
-  /* line 512, style.scss */
+  /* line 525, style.scss */
   #schedule table tr > td:nth-child(3) {
     width: 30%; }
 
-/* line 520, style.scss */
+/* line 533, style.scss */
 #podium #gold, #podium #silver, #podium #bronze {
   color: white;
   text-align: center; }
-  /* line 523, style.scss */
+  /* line 536, style.scss */
   #podium #gold h2, #podium #silver h2, #podium #bronze h2 {
     font-weight: bold; }
-  /* line 526, style.scss */
+  /* line 539, style.scss */
   #podium #gold a, #podium #silver a, #podium #bronze a {
     color: white;
     padding: 10px;
     border-top: 1px dotted;
     display: block; }
-/* line 533, style.scss */
+/* line 546, style.scss */
 #podium #gold {
   background: #E0C40B; }
-  /* line 535, style.scss */
+  /* line 548, style.scss */
   #podium #gold h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 539, style.scss */
+/* line 552, style.scss */
 #podium #silver {
   background: #666; }
-  /* line 541, style.scss */
+  /* line 554, style.scss */
   #podium #silver h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
-/* line 545, style.scss */
+/* line 558, style.scss */
 #podium #bronze {
   background: #8D5B33; }
-  /* line 547, style.scss */
+  /* line 560, style.scss */
   #podium #bronze h2 {
     text-shadow: 2px 2px #8D5B33,3px 3px #8F8F8F,0px 0 2px #8F8F8F; }
 
-/* line 552, style.scss */
+/* line 565, style.scss */
 #prizes {
   text-align: center; }
-  /* line 554, style.scss */
+  /* line 567, style.scss */
   #prizes .row {
     border-bottom: 1px solid lightGray; }
-    /* line 556, style.scss */
+    /* line 569, style.scss */
     #prizes .row .col-33 {
       padding: 0.5em 0; }
 
-/* line 564, style.scss */
+/* line 577, style.scss */
 #press .col-50 {
   padding: 10px !important; }
 
-/* line 568, style.scss */
+/* line 581, style.scss */
 .newspaper {
   background-color: #ffffe3;
   color: #000000;
@@ -3650,28 +3660,28 @@ header {
   outline: solid rgba(0, 0, 0, 0.3) 1px;
   outline-offset: -1px;
   position: relative; }
-  /* line 581, style.scss */
+  /* line 594, style.scss */
   .newspaper.nj h3 {
     font-family: Arvo, Arial;
     font-weight: bold; }
-  /* line 586, style.scss */
+  /* line 599, style.scss */
   .newspaper.blank {
     opacity: 0.5;
     background: lightGray; }
-  /* line 590, style.scss */
+  /* line 603, style.scss */
   .newspaper img {
     width: 100%; }
-  /* line 593, style.scss */
+  /* line 606, style.scss */
   .newspaper span {
     color: gray;
     display: block;
     margin-top: -8px;
     margin-bottom: 2px; }
 
-/* line 600, style.scss */
+/* line 613, style.scss */
 #access {
   text-align: center; }
-  /* line 602, style.scss */
+  /* line 615, style.scss */
   #access .btn, #access #location .btn-maps, #location #access .btn-maps, #access #location .btn-school, #location #access .btn-school, #access #location .btn-detect, #location #access .btn-detect, #access #location .btn-go, #location #access .btn-go, #access #location .btn-reset, #location #access .btn-reset, #access #faq .signup-btn, #faq #access .signup-btn, #access #faq .hackathon-link, #faq #access .hackathon-link, #access .button {
     background: #1e98d3;
     color: white;
@@ -3686,44 +3696,44 @@ header {
       background-color: #197eaf;
       -webkit-transform: scale(0.9); }
 
-/* line 609, style.scss */
+/* line 622, style.scss */
 #rules, #conduct {
   text-align: center; }
-  /* line 611, style.scss */
+  /* line 624, style.scss */
   #rules .container, #conduct .container {
     max-width: 700px; }
-  /* line 614, style.scss */
+  /* line 627, style.scss */
   #rules p, #conduct p {
     margin-bottom: 20px; }
 
-/* line 618, style.scss */
+/* line 631, style.scss */
 #rules {
   background: #2c3e50;
   color: #bdc3c7; }
 
-/* line 626, style.scss */
+/* line 639, style.scss */
 footer {
   background: #2c3e50;
   color: #bdc3c7;
   overflow: visible; }
-  /* line 630, style.scss */
+  /* line 643, style.scss */
   footer blockquote {
     border-left: 3px solid;
     padding: 10px 15px;
     line-height: 1.3em; }
-    /* line 635, style.scss */
+    /* line 648, style.scss */
     footer blockquote small {
       display: block;
       font-size: 80%; }
-      /* line 638, style.scss */
+      /* line 651, style.scss */
       footer blockquote small:before {
         content: '\2014 \00A0';
         padding-right: 2px; }
-  /* line 645, style.scss */
+  /* line 658, style.scss */
   footer .facebook-btn iframe {
     max-width: 300px !important;
     max-height: 50px !important; }
-  /* line 650, style.scss */
+  /* line 663, style.scss */
   footer a.fb-button {
     background: linear-gradient(#4c69ba, #3b55a0);
     border: none;
@@ -3740,7 +3750,7 @@ footer {
     vertical-align: bottom;
     font-family: 'Helvetica Neue', Helvetica, Arial, 'lucida grande',tahoma,verdana,arial,sans-serif;
     padding: 0px 5px; }
-  /* line 667, style.scss */
+  /* line 680, style.scss */
   footer a.twitter-follow-button, footer a.github-btn {
     font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
     position: relative;
@@ -3758,91 +3768,91 @@ footer {
     height: 20px;
     max-width: 100%;
     padding: 0px 5px; }
-    /* line 684, style.scss */
+    /* line 697, style.scss */
     footer a.twitter-follow-button i, footer a.github-btn i {
       color: #55acee;
       text-shadow: 0 1px rgba(255, 255, 255, 0.5);
       -webkit-transform: scale(1.5);
       display: inline-block;
       margin: 5px 0px; }
-      /* line 690, style.scss */
+      /* line 703, style.scss */
       footer a.twitter-follow-button i.icon-github, footer a.github-btn i.icon-github {
         color: black; }
 
-/* line 697, style.scss */
+/* line 710, style.scss */
 .footnote {
   background: #3e5771;
   color: #bdc3c7; }
-  /* line 700, style.scss */
+  /* line 713, style.scss */
   .footnote a {
     color: white; }
 
 @media screen and (max-width: 767px) {
-  /* line 706, style.scss */
+  /* line 719, style.scss */
   .linearound h1, .linearound h2 {
     font-size: 50px; }
 
-  /* line 711, style.scss */
+  /* line 724, style.scss */
   header {
     padding: 40px 20px;
     font-weight: bold;
     min-height: 100px !important; }
-    /* line 715, style.scss */
+    /* line 728, style.scss */
     header .container {
       border-radius: 8px;
       padding-bottom: 10px; }
-    /* line 720, style.scss */
+    /* line 733, style.scss */
     header iframe {
       display: none; }
 
-  /* line 724, style.scss */
+  /* line 737, style.scss */
   .judge {
     padding: 180px 0px;
     text-align: center;
     font-weight: bold; }
 
-  /* line 729, style.scss */
+  /* line 742, style.scss */
   #info {
     text-align: center; }
-    /* line 731, style.scss */
+    /* line 744, style.scss */
     #info .col-25, #info .col-30 {
       padding-left: 0px; }
-    /* line 734, style.scss */
+    /* line 747, style.scss */
     #info .col-25 i, #info .col-30 i {
       position: relative;
       margin-top: 20px;
       display: block; }
 
-  /* line 741, style.scss */
+  /* line 754, style.scss */
   #bios a {
     display: block;
     margin-bottom: 3em; }
-  /* line 745, style.scss */
+  /* line 758, style.scss */
   #bios img {
     width: 100px;
     height: 100px;
     float: left;
     padding: 0px; }
-  /* line 751, style.scss */
+  /* line 764, style.scss */
   #bios h4 {
     padding-left: 120px; }
-  /* line 754, style.scss */
+  /* line 767, style.scss */
   #bios p {
     padding-left: 120px; }
 
-  /* line 758, style.scss */
+  /* line 771, style.scss */
   #schedule table {
     font-size: 70%;
     line-height: 1.2em; }
 
-  /* line 762, style.scss */
+  /* line 775, style.scss */
   footer, .footnote, #sponsors, .hidden-mobile, #team, #map-canvas {
     display: none !important; }
 
-  /* line 765, style.scss */
+  /* line 778, style.scss */
   .back2top {
     display: block; }
-    /* line 767, style.scss */
+    /* line 780, style.scss */
     .back2top a {
       color: white;
       display: block;

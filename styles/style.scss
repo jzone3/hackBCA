@@ -190,6 +190,7 @@ header {
   background-position: center;
   .container {
     z-index: 10;
+    position: relative;
   }
   h1 {
     font-weight: bold;
@@ -205,6 +206,18 @@ header {
     top: 0;
     left: 0;
     z-index: 0;
+  }
+  &#video {
+    text-shadow: 0 0 4px black;
+    .container {
+      @extend .transition;
+      opacity: 1;
+    }
+    &:hover {
+      .container {
+        opacity: 0;
+      }
+    }
   }
 }
 
