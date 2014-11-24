@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+@font-face {
+    font-family: 'Outage';
+    src: url(../fonts/Outage.ttf) format('TrueType');
+}
+    
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.25);
+    -moz-transition: border-bottom-color 0.25s ease-in-out;
+    -webkit-transition: border-bottom-color 0.25s ease-in-out;
+    -o-transition: border-bottom-color 0.25s ease-in-out;
+    -ms-transition: border-bottom-color 0.25s ease-in-out;
+    transition: border-bottom-color 0.25s ease-in-out;
+}
+
+a:hover {
+    border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+
+.cover {
+    display: table;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    margin: 0;
+    padding: 125px auto;
+    background: url(../images/bg.jpg) no-repeat center center scroll;
+    color: #FFF;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.cover-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-container .content {
+    text-align: center;
+}
+
+.cover-container .content .logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover-container .content .date{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.time {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    
+    margin-top: 0;
+    margin-bottom: 45px;
+}
+
+.register {
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.27);
+    padding: 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border: 0;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Outage';
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.register:hover {
+    background: rgba(255, 255, 255, 0.42);
+}
+
+.summary {
+    background: url('images/overlay.png'), linear-gradient(45deg, #b39c68, #a56365, #412e4c);
+    padding: 25px 5px;
+    color: #FFF;
+}
+
+.main-question {
+    text-align: center;
+    
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+}
+
+.main-answer {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+.event-preview {
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+    font-size: 2em;
+    
+    text-align: center;
+}
+
+.preview-icon {
+    position: relative;
+    cursor: default;
+    text-align: center;
+}
+
+.preview-icon .fa {
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 8em;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    color: #FFF;
+    line-height: 1.5em;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.outage {
+    font-family: 'Outage', sans-serif;
+    font-weight: 300;
+}
+/*
+.preview-icon:before {
+    content: '';
+    background: #666;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.325em;
+    width: 0.65em;
+    height: 0.65em;
+    display: block;
+    border-radius: 100%;
+}
+
+.preview-icon:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0.65em;
+    width: 1px;
+    height: 4.35em;
+    background: #666;
+    margin-left: -0.5px;
+}
+*/
