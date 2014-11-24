@@ -169,6 +169,18 @@ a:hover {
     font-family: 'Outage', sans-serif;
     font-weight: 300;
 }
+
+.info {
+    text-align:center;
+}
+
+.more_about {
+    text-align:center;
+}
+
+.sponsors {
+    text-align:center;
+}
 /*
 .preview-icon:before {
     content: '';
